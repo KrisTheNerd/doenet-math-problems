@@ -1,0 +1,51 @@
+<!--
+#DESCRIPTION
+##  Calculus: Optimization problems
+##ENDDESCRIPTION
+
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Optimization - engineering and physics)
+## Date(01/25/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## Level(5)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.6')
+## Problem1('38')
+## KEYWORDS('calculus', 'derivative', 'optimization')
+-->
+
+<setup>
+  <selectFromSequence from="2" to="5" name="a" />
+  <selectFromSequence from="2" to="4" name="b" />
+  <math name="c" simplify>2*$a</math>
+  <math name="ans" simplify>pi*$b/$c</math>
+</setup>
+
+<p>
+  A woman at a point <m>A</m> on the shore of a circular lake with radius <m>r=$b</m> wants to arrive at the point <m>C</m> diametrically opposite <m>A</m> on the other side of the lake in the shortest possible time.
+    She can walk at the rate of <m>$c \text{mph}</m>
+    and row a boat at <m>$a \text{mph}</m>
+    What is the shortest amount of time it would take her to reach point <m>C</m>?
+
+  <image 
+source="http://drive.google.com/uc?export=view&id=1-UMTobVIeDwoa-8alKeotjzk3BXLH_ne" width="300px" description="Circle Diagram" />
+</p>
+
+<p>
+  Answer (in hours): <m>t=</m>
+  <answer>
+    <award>
+      $ans
+    </award>
+  </answer>
+</p>
+
+<solution>
+  Answer: $ans
+</solution>

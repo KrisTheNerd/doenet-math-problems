@@ -1,0 +1,64 @@
+<!--
+#DESCRIPTION
+##  Calculus: Optimization problems
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Optimization - general)
+## Date(12/13/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(Optimization_NormanWindow)
+## Level(5)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.6')
+## Problem1('')
+## KEYWORDS('calculus', 'derivative', 'optimization')
+-->
+
+<setup>
+  <selectFromSequence from="200" to="1000" step="100" name="a" />
+  <math name="ans1" simplify>
+    2*$a/(4+pi)
+  </math>
+  <math name="ans2" simplify>
+    $a/(4+pi)
+  </math>
+</setup>
+
+<p>
+  A Norman window has the shape of a rectangle
+  with a semi circle on top;
+  diameter of the semicircle exactly matches the
+  width of the rectangle.  Find the dimensions
+  <m>w \times h</m> of the Norman window whose
+  perimeter is <m>$a\text{in.}</m> that has
+  maximal area.
+</p>
+<image 
+source="http://drive.google.com/uc?export=view&id=1QQfbd5F4hE3cb5x5houVLbwqa-tTA8HE" width="300px" height="420px" description="Norman Window Diagram" />
+
+<p>
+  Answer (in inches):
+  <m>w=</m>
+  <answer>
+    <award>
+      $ans1
+    </award>
+  </answer>
+  and
+  <m>h=</m>
+  <answer>
+    <award>
+      $ans2
+    </award>
+  </answer>
+</p>
+
+<solution>
+  width=$ans1 and height=$ans2
+</solution>

@@ -1,0 +1,197 @@
+<!--
+  Missing plots of open/closed circles
+  for some endpoints. Needs to be resolved.
+-->
+
+<!--
+#DESCRIPTION
+##  Calculus: Limit laws
+##ENDDESCRIPTION
+
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Limits and continuity)
+## DBsection(Finding limits using graphs)
+## Date(08/30/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(limits_graphs_compose)
+## MLTleader(1)
+## Level(3)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('2.3')
+## Problem1('2')
+## KEYWORDS('calculus', 'limit laws', 'limit')
+## MO(1)-TF-12/18/2014
+-->
+
+<setup>
+  <selectFromSequence from="-1" to="2" name="a" />
+  <selectFromSequence from="1" to="2" name="b" />
+  <selectFromSequence from="-2" to="0" name="c" />
+  <number name="graphWidth">300</number>
+  <math name="ans1">
+    DNE
+  </math>
+  <math name="ans2" simplify>
+    (1+$a)+($b-1)
+  </math>
+  <math name="ans3">0</math>
+  <math name="ans4">0</math>
+  <math name="ans5">sqrt(3-$b)</math>
+</setup>
+
+<p>
+  Use the given graphs of the function
+  <m>f</m> (left, the <copy tname="cvA" prop="styleDescription" /> line) and 
+  <m>g</m> (right, the <copy tname="cvA2" prop="styleDescription" /> line) to find the following limits:
+</p>
+
+<sideBySide>
+<figure suppressFigureNameInCaption>
+  <graph 
+    width="$graphWidth"
+    height="250"
+    xmin="-3"
+    xmax="3"
+    ymin="-3"
+    ymax="3" 
+    >
+    <curve name="cvA">
+      <function formula="$b*x" domain="(-1,1)" />
+      <!-- Need to get points working
+        <function formula="$c" domain="(1,1)" />
+      -->
+    </curve>
+    <curve name="cvB">
+      <function formula="-$b-1-x" domain="(-3,-1)" />
+    </curve>
+    <curve name="cvC">
+      <function formula="-sin(pi(x-1)/2)+$b" domain="(1,3)" />
+    </curve>
+  </graph>
+</figure>
+<figure suppressFigureNameInCaption>
+  <graph 
+    width="$graphWidth"
+    height="250"
+    xmin="-3"
+    xmax="3"
+    ymin="-3"
+    ymax="3" 
+    styleNumber="2" >
+    <curve name="cvA2">
+      <function formula="[-(x-1.25)^2]/4+($a+1)" domain="(-3,1)" />
+      <!-- Need to get points working
+        <function formula="$c" domain="(1,1)" />
+      -->
+    </curve>
+    <curve name="cvB2">
+      <function formula="(x-1)^2+$a" domain="(1,3)" />
+    </curve>
+  </graph>
+</figure>
+</sideBySide>
+
+<p>
+  1. <m>\displaystyle \lim_{x \to 1}[f(x)+g(x)] = </m>
+  <answer symbolicEquality>
+    <award>
+      $ans1
+    </award>
+  </answer>
+</p>
+
+<p>
+  2. <m>\displaystyle \lim_{x \to 2}[f(x)+g(x)] =</m>
+  <answer>
+    <award>
+      $ans2
+    </award>
+  </answer>
+</p>
+
+<p>
+  3. <m>\displaystyle \lim_{x \to 0}f(x)g(x) =</m>
+  <answer>
+    <award>
+      $ans3
+    </award>
+  </answer>
+</p>
+
+<p>
+  4. <m>\displaystyle \lim_{x \to 0}\frac{f(x)}{g(x)} =</m>
+  <answer>
+    <award>
+      $ans4
+    </award>
+  </answer>
+</p>
+
+<p>
+  5. <m>\displaystyle \lim_{x \to -1}\sqrt{3+f(x)} =</m>
+  <answer>
+    <award>
+      $ans5
+    </award>
+  </answer>
+</p>
+
+<solution>
+  <tabular>
+    <row bottom="minor">
+      <cell>
+        <m>1:</m>
+      </cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>
+        $ans1
+      </cell>
+    </row>
+    <row bottom="minor">
+      <cell>
+        <m>2:</m>
+      </cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>
+        $ans2
+      </cell>
+    </row>
+    <row bottom="minor">
+      <cell>
+        <m>3:</m>
+      </cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>
+        $ans3
+      </cell>
+    </row>
+    <row bottom="minor">
+      <cell>
+        <m>4:</m>
+      </cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>
+        $ans4
+      </cell>
+    </row>
+    <row bottom="minor">
+      <cell>
+        <m>5:</m>
+      </cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>
+        $ans5
+      </cell>
+    </row>
+  </tabular>
+</solution>

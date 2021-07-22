@@ -1,0 +1,71 @@
+<!--
+#DESCRIPTION
+##  Calculus: Optimization problems
+##ENDDESCRIPTION
+
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Optimization - general)
+## Date(12/13/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(Optimization_Fence)
+## Level(5)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.6')
+## Problem1('')
+## KEYWORDS('calculus', 'derivative', 'optimization')
+-->
+
+<setup>
+  <selectFromSequence from="3" to="9" step="2" name="a" />
+  <select assignNames="(b)">
+    <option>
+      <number>10000</number>
+    </option>
+    <option>
+      <number>1000000</number>
+    </option>
+  </select>
+  <math name="c" simplify>2^$a</math>
+  <math name="ans" simplify>
+    2*sqrt(2*$c*$b)
+  </math>
+</setup>
+
+<p>
+  Farmer Alex has <m>$c</m> llamas each of whom needs
+  <m>$b</m> square feet of grazing area.
+  He wants to enclose a rectangular pen along a straight
+  river, where he does not need fence.
+  What is the minimum amount of fencing he must use to
+  build his pen?
+</p>
+
+<p>
+  Answer (in feet):
+  <answer>
+    <award>
+      $ans
+    </award>
+  </answer>
+</p>
+
+<solution>
+  <tabular>
+    <row bottom="minor">
+      <cell>
+        Answer:
+      </cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>
+        $ans
+      </cell>
+    </row>
+  </tabular>
+</solution>

@@ -1,0 +1,167 @@
+<!--
+#DESCRIPTION
+##  Calculus: Limits of Functions
+##ENDDESCRIPTION
+
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Limits and continuity)
+## DBsection(Finding limits using graphs)
+## Date(08/29/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(limits_graphs_curvy_spline)
+## MLTleader(1)
+## Level(2)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('2.2')
+## Problem1('5')
+## KEYWORDS('calculus', 'function', 'limit')
+## MO(1)-TF-12/18/2014
+-->
+
+<setup>
+  <selectFromSequence from="1" to="3" name="a" />
+  <selectFromSequence from="0" to="$a-1" name="b" />
+  <selectFromSequence from="-2" to="$b" name="c" />
+
+  <math name="ans1" simplify>2+$b</math>
+  <math name="ans2" simplify>$c</math>
+  <math name="ans3">DNE</math>
+  <math name="ans4">DNE</math>
+  <math name="ans5" simplify>$b+1</math>
+</setup>
+
+<p>
+  Use the given graph of the function <m>g</m>
+  to find the following limits:
+</p>
+
+<!--
+  Need to add endpoints and 
+  $p4 = FEQ("$b+1 for x in [2,2] using color:blue weight:2");
+-->
+
+<figure suppressFigureNameInCaption>
+  <graph 
+    width="400"
+    height="400"
+    xmin="-3"
+    xmax="7"
+    ymin="-3"
+    ymax="7" 
+    >
+    <curve name="cvA" styleNumber="1">
+      <function formula="((x-1)^2)+$a" domain="(-3,0)" />
+    </curve>
+    <curve name="cvB">
+      <function formula="-2*cos(pi*x/2)+$b" domain="(0,2)" />
+    </curve>
+    <curve name="cvC">
+      <function formula="((x-2)^2)/8+$c" domain="(2,7)" />
+    </curve>
+  </graph>
+</figure>
+
+<p>
+  1. <m>\displaystyle \lim_{x \to 2^{-}}g(x) =</m>
+  <answer symbolicEquality>
+    <award>
+      $ans1
+    </award>
+  </answer>
+</p>
+
+<p>
+  2. <m>\displaystyle \lim_{x \to 2^{+}}g(x) =</m>
+  <answer>
+    <award>
+      $ans2
+    </award>
+  </answer>
+</p>
+
+<p>
+  3. <m>\displaystyle \lim_{x \to 2}g(x) =</m>
+  <answer symbolicEquality>
+    <award>
+      $ans3
+    </award>
+  </answer>
+</p>
+
+<p>
+  4. <m>\displaystyle \lim_{x \to 0}g(x) =</m>
+  <answer>
+    <award>
+      $ans4
+    </award>
+  </answer>
+</p>
+
+<p>
+  5. <m>\displaystyle g(2) =</m>
+  <answer symbolicEquality>
+    <award>
+      $ans3
+    </award>
+  </answer>
+</p>
+
+<solution>
+  <tabular>
+    <row bottom="minor">
+      <cell>
+        <m>1:</m>
+      </cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>
+        $ans1
+      </cell>
+    </row>
+    <row bottom="minor">
+      <cell>
+        <m>2:</m>
+      </cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>
+        $ans2
+      </cell>
+    </row>
+    <row bottom="minor">
+      <cell>
+        <m>3:</m>
+      </cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>
+        <text>$ans3</text>
+      </cell>
+    </row>
+    <row bottom="minor">
+      <cell>
+        <m>4:</m>
+      </cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>
+        <text>$ans4</text>
+      </cell>
+    </row>
+    <row bottom="minor">
+      <cell>
+        <m>5:</m>
+      </cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>
+        $ans5
+      </cell>
+    </row>
+  </tabular>
+</solution>
