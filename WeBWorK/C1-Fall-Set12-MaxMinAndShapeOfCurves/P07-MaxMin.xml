@@ -1,0 +1,63 @@
+<!--
+#DESCRIPTION
+##  Calculus: Maximum and minimum values
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Global extrema)
+## Date(01/11/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(GlobalExtremes_RationalQuads)
+## MLTleader(1)
+## Level(4)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.2')
+## Problem1('48')
+## KEYWORDS('calculus', 'derivative', 'maximum', 'minimum')
+-->
+
+<setup>
+  <selectFromSequence from="1" to="5" name="a" />
+  <math name="a2" simplify>$a^2</math>
+  <math name="ans1" simplify>(25-$a2)/(25+$a2)</math>
+  <math name="ans2">-1</math>
+</setup>
+
+<p>
+  Find the absolute maximum and absolute minimum values of
+  <m>\displaystyle f(x) = \frac{x^2-$a2}{x^2+$a2}</m>
+  on the interval
+  <m>[-5,5].</m>
+</p>
+
+<p>
+  <row>
+    1.
+    Find the absolute maximum of <m>f</m> on the interval.
+  </row>
+  <row>
+    Answer:
+    <answer><award>$ans1</award></answer>
+  </row>
+</p>
+
+<p>
+  <row>
+    2.
+    Find the absolute minimum of <m>f</m> on the interval.
+  </row>
+  <row>
+    Answer:
+    <answer><award>$ans2</award></answer>
+  </row>
+</p>
+
+<solution>
+  <row>1: <m>$ans1</m></row>
+  <row>2: <m>$ans2</m></row>
+</solution>

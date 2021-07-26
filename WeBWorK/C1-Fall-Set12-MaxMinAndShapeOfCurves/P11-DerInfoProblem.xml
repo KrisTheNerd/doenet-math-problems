@@ -1,0 +1,41 @@
+<!--
+#DESCRIPTION
+##  Calculus: Sketching the graph of a function
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Summary of curve sketching)
+## Date(01/17/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(SCS_all_poly)
+## Level(4)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.3')
+## Problem1('8')
+## KEYWORDS('calculus', 'derivative', 'maximum', 'minimum', 'increasing', 'decreasing', 'concavity')
+-->
+
+<setup>
+  <selectFromSequence from="-5" to="5" exclude="0" name="a" />
+  <selectFromSequence from="1" to="4" name="b" />
+  <math name="b1" simplify>3*(2*$b-1)</math>
+  <math name="b2" simplify>6*$b</math>
+  <function symbolic formula="4*x^3+$b1*x^2-$b2*x+$a" name="f" />
+  <math name="c" simplify>$$f(-$b)</math>
+  <math name="d" simplify>$$f(1/2)</math>
+  <math name="e" simplify>(1-2*$b)/4</math>
+</setup>
+
+<copy f="$f"
+  ans1="(-infinity,-$b)union(1/2,infinity)"
+  ans2="(-$b,1/2)"
+  ans3="(-$b,$c)"
+  ans4="(1/2,$d)"
+  ans5="($e, infinity)"
+  ans6="(-infinity,$e)"
+  uri="doenet:contentId=17c03a2c308726dcd5de6ee7858d0e5d105370b4e9667b96987b9f3de79a7178"/>

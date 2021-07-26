@@ -1,0 +1,66 @@
+<!--
+#DESCRIPTION
+##  Calculus: Maximum and minimum values
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Increasing/decreasing functions and local extrema)
+## Date(01/11/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(find_crit_nums_Rad)
+## Level(3)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.2')
+## Problem1('32')
+## KEYWORDS('calculus', 'derivative', 'maximum', 'minimum')
+-->
+
+<setup>
+  <select assignNames="(a ans)">
+    <option>
+      <number>2</number>
+      <math>none</math>
+    </option>
+    <option>
+      <number>3</number>
+      <math>-$b</math>
+    </option>
+    <option>
+      <number>4</number>
+      <math>none</math>
+    </option>
+    <option>
+      <number>5</number>
+      <math>$-$b</math>
+    </option>
+    <option>
+      <number>6</number>
+      <math>none</math>
+    </option>
+    <option>
+      <number>7</number>
+      <math>-$b</math>
+    </option>
+  </select>
+  <math name="b" simplify>$a-1</math>
+</setup>
+
+<p>
+  <row>
+    Find the critical numbers of the function
+    <me>f(x) = x^{1/$a}-x^{-$b/$a}.</me>
+  </row>
+  <row>
+    Answer (separate by commas): <m>x = </m>
+    <answer><award>$ans</award></answer>
+  </row>
+</p>
+
+<solution>
+  Answer: $ans
+</solution>

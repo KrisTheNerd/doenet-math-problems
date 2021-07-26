@@ -1,0 +1,44 @@
+<!--
+#DESCRIPTION
+##  Calculus: Maximum and minimum values
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Increasing/decreasing functions and local extrema)
+## Date(01/11/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## Level(2)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.2')
+## Problem1('24')
+## KEYWORDS('calculus', 'derivative', 'critical number')
+-->
+
+<setup>
+  <selectFromSequence numberToSelect="2" withReplacement from="2" to="5" assignNames="a b" />
+  <math name="coef1" simplify>3*($b-$a)</math>
+  <math name="coef2" simplify>6*$a*$b</math>
+  <function name="f" symbolic formula="2*x^3+$coef1*x^2-$coef2*x" />
+  <math name="ans" unorderedCompare>$a, -$b</math>
+</setup>
+
+<p>
+  <row>
+    Find the critical numbers of the function
+    <me>f(x) = $f.</me>
+  </row>
+  <row>
+    Answer (separate by commas):
+    <m>x = </m>
+    <answer><award unorderedCompare>$ans</award></answer>
+  </row>
+</p>
+
+<solution>
+  Answer: $ans
+</solution>
