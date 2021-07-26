@@ -21,161 +21,143 @@
 -->
 <module name="derivativeInfoProblem">
   <moduleAttributeDefinitions>
-    <moduleAttribute componentType="function" attribute="f" defaultValue="x^3-x" assignNames="f" />
-    <moduleAttribute componentType="math" format="latex" attribute="ans1" defaultValue="" assignNames="ans1" />
+    <moduleAttribute componentType="function" attribute="f" defaultValue="x^4/4-x^2/2" assignNames="f" />
+    <moduleAttribute componentType="math" attribute="ans1" defaultValue="(-1,0)union(1,infinity)" assignNames="ans1" />
+    <moduleAttribute componentType="math" attribute="ans2" defaultValue="(-infinity,-1)union(0,1)" assignNames="ans2" />
+    <moduleAttribute componentType="math" attribute="ans3" defaultValue="(0,0)" assignNames="ans3" />
+    <moduleAttribute componentType="math" attribute="ans4" defaultValue="(-1,-1/4),(1,-1/4)" assignNames="ans4" />
+    <moduleAttribute componentType="math" attribute="ans5" defaultValue="(-infinity,-1/sqrt(3))union(1/sqrt(3),infinity)" assignNames="ans5" />
+    <moduleAttribute componentType="math" attribute="ans6" defaultValue="(-1/sqrt(3),1/sqrt(3))" assignNames="ans6" />
   </moduleAttributeDefinitions>
-  <!-- Module Content -->
+  <p>
+    Let <m>f(x)=$f</m>.
+    Answer the following questions.
+  </p>
+
+  <p>
+    1. Find the largest \emph{open} interval(s) on which
+    <m>f</m> is increasing. If there is more than one interval,
+    write your answer as a union of the intervals.
+  </p>
+  <p>
+    Answer (in interval notation):
+    <answer><award>$ans1</award></answer>
+  </p>
+
+  <p>
+    2. Find the largest \emph{open} interval(s) on which
+    <m>f</m> is decreasing. If there is more than one interval,
+    write your answer as a union of the intervals.
+  </p>
+  <p>
+    Answer (in interval notation):
+    <answer><award>$ans2</award></answer>
+  </p>
+
+  <p>
+    3. Find the local maxima of <m>f</m>.
+    \textbf{List your answers as points in the form}
+    <m>(a,b)</m>.
+  </p>
+  <p>
+    Answer (separate by commas):
+    <answer><award symbolicEquality>$ans3</award></answer>
+  </p>
+
+  <p>
+    4. Find the local minima of <m>f</m>.
+    \textbf{List your answers as points in the form}
+    <m>(a,b)</m>.
+  </p>
+  <p>
+    Answer (separate by commas):
+    <answer><award>$ans4</award></answer>
+  </p>
+
+  <p>
+    5. Find the largest \emph{open} interval(s) on
+    which <m>f</m> is concave upward. If there is
+    more than one interval, write your answer as a
+    union of the intervals.
+  </p>
+  <p>
+    Answer (in interval notation):
+    <answer><award>$ans5</award></answer>
+  </p>
+
+  <p>
+    6. Find the largest \emph{open} interval(s) on
+    which <m>f</m> is concave downward. If there is
+    more than one interval, write your answer as a
+    union of the intervals.
+  </p>
+  <p>
+    Answer (in interval notation):
+    <answer><award>$ans6</award></answer>
+  </p>
+
+  <solution>
+    <tabular>
+      <row bottom="minor">
+        <cell>
+          <m>1:</m>
+        </cell>
+        <cell></cell>
+        <cell></cell>
+        <cell>
+          $ans1
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell>
+          <m>2:</m>
+        </cell>
+        <cell></cell>
+        <cell></cell>
+        <cell>
+          $ans2
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell>
+          <m>3:</m>
+        </cell>
+        <cell></cell>
+        <cell></cell>
+        <cell>
+          <text>$ans3</text>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell>
+          <m>4:</m>
+        </cell>
+        <cell></cell>
+        <cell></cell>
+        <cell>
+          $ans4
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell>
+          <m>5:</m>
+        </cell>
+        <cell></cell>
+        <cell></cell>
+        <cell>
+          $ans5
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell>
+          <m>6:</m>
+        </cell>
+        <cell></cell>
+        <cell></cell>
+        <cell>
+          $ans6
+        </cell>
+      </row>
+    </tabular>
+  </solution>
 </module>
-
-<setup>
-  <math name="ans1" format="latex">
-    (0,\infty)
-  </math>
-  <math name="ans2" format="latex">
-    (-\infty,0)
-  </math>
-  <math name="ans3">
-    none
-  </math>
-  <math name="ans4">
-    (0,$c)
-  </math>
-  <math name="ans5" format="latex">
-    (-$d,$d)
-  </math>
-  <math name="ans6" format="latex">
-    (-\infty,-$d)\cup ($d,\infty)
-  </math>
-</setup>
-
-<p>
-  Let <m>f(x)=$f</m>.
-  Answer the following questions.
-</p>
-
-<p>
-  1. Find the largest \emph{open} interval(s) on which
-  <m>f</m> is increasing. If there is more than one interval,
-  write your answer as a union of the intervals.
-</p>
-<p>
-  Answer (in interval notation):
-  <answer><award>$ans1</award></answer>
-</p>
-
-<p>
-  2. Find the largest \emph{open} interval(s) on which
-  <m>f</m> is decreasing. If there is more than one interval,
-  write your answer as a union of the intervals.
-</p>
-<p>
-  Answer (in interval notation):
-  <answer><award>$ans2</award></answer>
-</p>
-
-<p>
-  3. Find the local maxima of <m>f</m>.
-  \textbf{List your answers as points in the form}
-  <m>(a,b)</m>.
-</p>
-<p>
-  Answer (separate by commas):
-  <answer><award symbolicEquality>$ans3</award></answer>
-</p>
-
-<p>
-  4. Find the local minima of <m>f</m>.
-  \textbf{List your answers as points in the form}
-  <m>(a,b)</m>.
-</p>
-<p>
-  Answer (separate by commas):
-  <answer><award>$ans4</award></answer>
-</p>
-
-<p>
-  5. Find the largest \emph{open} interval(s) on
-  which <m>f</m> is concave upward. If there is
-  more than one interval, write your answer as a
-  union of the intervals.
-</p>
-<p>
-  Answer (in interval notation):
-  <answer><award>$ans5</award></answer>
-</p>
-
-<p>
-  6. Find the largest \emph{open} interval(s) on
-  which <m>f</m> is concave downward. If there is
-  more than one interval, write your answer as a
-  union of the intervals.
-</p>
-<p>
-  Answer (in interval notation):
-  <answer><award>$ans6</award></answer>
-</p>
-
-<solution>
-  <tabular>
-    <row bottom="minor">
-      <cell>
-        <m>1:</m>
-      </cell>
-      <cell></cell>
-      <cell></cell>
-      <cell>
-        $ans1
-      </cell>
-    </row>
-    <row bottom="minor">
-      <cell>
-        <m>2:</m>
-      </cell>
-      <cell></cell>
-      <cell></cell>
-      <cell>
-        $ans2
-      </cell>
-    </row>
-    <row bottom="minor">
-      <cell>
-        <m>3:</m>
-      </cell>
-      <cell></cell>
-      <cell></cell>
-      <cell>
-        <text>$ans3</text>
-      </cell>
-    </row>
-    <row bottom="minor">
-      <cell>
-        <m>4:</m>
-      </cell>
-      <cell></cell>
-      <cell></cell>
-      <cell>
-        $ans4
-      </cell>
-    </row>
-    <row bottom="minor">
-      <cell>
-        <m>5:</m>
-      </cell>
-      <cell></cell>
-      <cell></cell>
-      <cell>
-        $ans5
-      </cell>
-    </row>
-    <row bottom="minor">
-      <cell>
-        <m>6:</m>
-      </cell>
-      <cell></cell>
-      <cell></cell>
-      <cell>
-        $ans6
-      </cell>
-    </row>
-  </tabular>
-</solution>

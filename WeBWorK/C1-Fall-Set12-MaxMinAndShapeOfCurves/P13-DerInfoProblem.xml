@@ -3,47 +3,36 @@
 ##  Calculus: Sketching the graph of a function
 ##ENDDESCRIPTION
 
+
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Applications of differentiation)
 ## DBsection(Summary of curve sketching)
 ## Date(01/17/2011)
 ## Institution(University of Minnesota)
 ## Author(Justin Sukiennik)
-## MLT(SCS_all_log)
+## MLT(SCS_all_rad)
+## MLTleader(1)
 ## Level(4)
 ## MO(1)
 ## TitleText1('Calculus: Concepts and Contexts')
 ## AuthorText1('Stewart')
 ## EditionText1('4 Custom UMTYMP Ed.')
 ## Section1('4.3')
-## Problem1('30')
+## Problem1('27')
 ## KEYWORDS('calculus', 'derivative', 'maximum', 'minimum', 'increasing', 'decreasing', 'concavity')
 -->
-
 <setup>
-  <select assignNames="(a)">
-    <option>
-      <number>27</number>
-    </option>
-    <option>
-      <number>432</number>
-    </option>
-  </select>
-  <function symbolic formula="ln(x^4+$a)" name="f" />
-  <math name="c" simplify>
-    $$f(0)
-  </math>
-  <math name="d" simplify>
-    (3*$a)^(1/4)
-  </math>
+  <selectFromSequence from="2" to="8" name="a" />
+  <function symbolic formula="x*sqrt(x+$a)" name="f" />
+  <math name="c">$$f(-2*$a/3)</math>
 </setup>
 
 <copy
   f="$f"
-  ans1="(0,\infty)"
-  ans2="(-\infty,0)"
+  ans1="(-2*$a/3,infinity)"
+  ans2="(-$a,-2*$a/3)"
   ans3="none"
-  ans4="(0,$c)"
-  ans5="(-$d,$d)"
-  ans6="(-infinity,-$d) union ($d,infinity)"
+  ans4="(-2*$a/3,$c)"
+  ans5="(-$a,infinity)"
+  ans6="none"
   uri="doenet:contentId=17c03a2c308726dcd5de6ee7858d0e5d105370b4e9667b96987b9f3de79a7178"/>
