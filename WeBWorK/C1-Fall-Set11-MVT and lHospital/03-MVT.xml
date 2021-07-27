@@ -1,0 +1,44 @@
+<!--
+#DESCRIPTION
+##  Calculus: Mean value theorem
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Mean value theorem)
+## Date(01/11/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## Level(4)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.3')
+## Problem1('66')
+## KEYWORDS('calculus', 'derivative', 'mean value theorem')
+-->
+
+<setup>
+  <selectFromSequence from="20" to="60" step="10" name="a" />
+  <selectFromSequence from="5" to="20" step="5" name="c" />
+  <math name="b" simplify>$a+$c</math>
+  <math name="ans" simplify>6*$c</math>
+</setup>
+
+<p>
+  <row>
+    At 2:00pm a car's speedometer reads <m>$a\text{mph},</m>
+    and at 2:10pm it reads <m>$b\text{mph}.</m>
+    Use the Mean Value Theorem to find an acceleration
+    the car $\emph{must} achieve.
+  </row>
+  <row>
+    Answer (in <m>\text{mi/h}^2</m>):
+    <answer><award>$ans</award></answer>
+  </row>
+</p>
+
+<solution>
+  Answer: $ans
+</solution>

@@ -1,0 +1,41 @@
+<!--
+#DESCRIPTION
+##  Calculus: Mean value theorem
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Mean value theorem)
+## Date(01/11/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## Level(2)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.3')
+## Problem1('63')
+## KEYWORDS('calculus', 'derivative', 'mean value theorem')
+-->
+
+<setup>
+  <selectFromSequence from="-5" to="5" exclude="0" name="a" />
+  <selectFromSequence from="2" to="8" name="b" />
+  <math name="ans" simplify>$a+4*$b</math>
+</setup>
+
+<p>
+  <row>
+    Suppose that <m>f(0) = $a</m> and <m>f'(x) \le $b</m> for all values of <m>x.</m>
+    Use the Mean Value Theorem to determine how large <m>f(4)</m> can possibly be.
+  </row>
+  <row>
+    Answer: <m>f(4) \le</m>
+    <answer><award>$ans</award></answer>
+  </row>
+</p>
+
+<solution>
+  Answer: $ans
+</solution>
