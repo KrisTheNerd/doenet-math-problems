@@ -7,7 +7,6 @@
 ##  Calculus: Limits of Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Limits and continuity)
 ## DBsection(One-sided limits - concept of)
@@ -52,7 +51,7 @@
   If a limit \emph{does not exist},
   type \textbb{DNE}.
   <me>
-    f(x) = 
+    f(x) =
       \begin{cases}
         x-$a, &\text{for } x \le -1 \\
         x^2+$b, &\text{for } -1 < x \le 1 \\
@@ -76,7 +75,7 @@
 <p>
   2.
   <m>
-    \displaystyle \lim_{x \to -1^{+}}f(x) = 
+    \displaystyle \lim_{x \to -1^{+}}f(x) =
   </m>
   <answer>
     <award>

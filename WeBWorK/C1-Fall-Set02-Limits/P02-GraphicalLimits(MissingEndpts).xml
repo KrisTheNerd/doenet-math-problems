@@ -3,7 +3,6 @@
 ##  Calculus: Limits of Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Limits and continuity)
 ## DBsection(Finding limits using graphs)
@@ -41,18 +40,18 @@
 </p>
 
 <!--
-  Need to add endpoints and 
+  Need to add endpoints and
   $p4 = FEQ("$b+1 for x in [2,2] using color:blue weight:2");
 -->
 
 <figure suppressFigureNameInCaption>
-  <graph 
+  <graph
     width="400"
     height="400"
     xmin="-3"
     xmax="7"
     ymin="-3"
-    ymax="7" 
+    ymax="7"
     >
     <curve name="cvA" styleNumber="1">
       <function formula="((x-1)^2)+$a" domain="(-3,0)" />

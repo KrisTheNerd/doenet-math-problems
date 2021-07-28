@@ -3,7 +3,6 @@
 ##  Calculus: Evaluating integrals using area
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Integrals)
 ## DBsection(Conceptual understanding of integration)
@@ -29,7 +28,7 @@
 </setup>
 
 <p>
-  Evaluate the integral 
+  Evaluate the integral
   <m>
     \displaystyle \int_{0}^{$b}\! |x-$a| \, dx
   </m>

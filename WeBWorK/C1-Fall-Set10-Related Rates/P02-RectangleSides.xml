@@ -1,0 +1,44 @@
+<!--
+#DESCRIPTION
+##  Calculus: Related rates
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Related rates)
+## Date(11/29/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## Level(4)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.1')
+## Problem1('4')
+## KEYWORDS('calculus', 'derivative', 'related rates')
+-->
+
+<setup>
+  <selectFromSequence from="6" to="8" step="1" name="a" />
+  <selectFromSequence from="2" to="5" step="1" name="b" />
+  <selectFromSequence from="20" to="40" step="10" name="c" />
+  <selectFromSequence from="10" to="25" step="5" name="d" />
+  <math name="ans" simplify>$a*$d+$b*$c</math>
+</setup>
+
+<p>
+  The length of a rectangle is increasing at a rate of <m>$a\text{cm/s}</m>
+  and its width is increasing at a rate of <m>$b\text{cm/s}</m>.  When the
+  length is <m>$c\text{cm}</m> and the width is <m>$d\text{cm},</m> how fast
+  is the area of the rectangle increasing?
+</p>
+
+<p>
+  Answer (in <m>\text{cm}^2/\text{s}</m>):
+  <answer><award>$ans</award></answer>
+</p>
+
+<solution>
+  Answer: $ans
+</solution>

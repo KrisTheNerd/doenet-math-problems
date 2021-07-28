@@ -1,0 +1,68 @@
+<!--
+#DESCRIPTION
+##  Calculus: Related rates
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Related rates)
+## Date(11/29/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(RelatedRate-FunctionGiven)
+## Level(3)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.1')
+## Problem1('9')
+## KEYWORDS('calculus', 'derivative', 'related rates')
+-->
+
+<setup>
+  <selectFromSequence from="2" to="4" name="a" />
+  <selectFromSequence from="5" to="6" name="b" />
+  <select assignNames="(c d e)">
+    <option>
+      <math>4</math>
+      <math>3</math>
+      <math>5</math>
+    </option>
+    <option>
+      <math>5</math>
+      <math>12</math>
+      <math>13</math>
+    </option>
+    <option>
+      <math>6</math>
+      <math>8</math>
+      <math>10</math>
+    </option>
+    <option>
+      <math>8</math>
+      <math>15</math>
+      <math>17</math>
+    </option>
+    <option>
+      <math>12</math>
+      <math>35</math>
+      <math>37</math>
+    </option>
+  </select>
+  <math name="ans" simplify>($c*$a+$d*$b)/($e)</math>
+</setup>
+
+<p>
+  If <m>z^2 = x^2 + y^2</m> with <m>z>0, dx/dt=$a,</m> and <m>dy/dt=$b,</m>
+  find <m>dz/dt</m> when <m>x=$c</m> and <m>y=$d.</m>
+</p>
+
+<p>
+  Answer: <m>\displaystyle \frac{dz}{dt} =</m>
+  <answer><award>$ans</award></answer>
+</p>
+
+<solution>
+  Answer: $ans
+</solution>

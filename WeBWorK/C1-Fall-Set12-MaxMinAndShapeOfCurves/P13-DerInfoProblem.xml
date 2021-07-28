@@ -3,7 +3,6 @@
 ##  Calculus: Sketching the graph of a function
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Applications of differentiation)
 ## DBsection(Summary of curve sketching)
@@ -35,4 +34,4 @@
   ans4="(-2*$a/3,$c)"
   ans5="(-$a,infinity)"
   ans6="none"
-  uri="doenet:contentId=17c03a2c308726dcd5de6ee7858d0e5d105370b4e9667b96987b9f3de79a7178"/>
+  uri="doenet:contentId=ca2260170595ed2f65434c591cf6ef05710b4fd02ff8d534469ea474fa8beef2"/>

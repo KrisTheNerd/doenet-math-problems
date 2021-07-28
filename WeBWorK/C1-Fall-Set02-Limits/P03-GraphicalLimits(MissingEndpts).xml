@@ -3,7 +3,6 @@
 ##  Calculus: Limits of Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Limits and continuity)
 ## DBsection(Finding limits using graphs)
@@ -34,13 +33,13 @@
 Use the given graph of the function <m>f</m> to find the following limits.  If a limit \emph{does not exist}, type "DNE".
 
 <figure suppressFigureNameInCaption>
-  <graph 
+  <graph
     width="400"
     height="400"
     xmin="-3"
     xmax="5"
     ymin="-3"
-    ymax="5" 
+    ymax="5"
     >
     <curve name="cvA" styleNumber="1">
       <function formula="2*sin(pi/(x-2))+$a" domain="(0,2)" />

@@ -8,7 +8,6 @@
 ##  Calculus: Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Algebra)
 ## DBchapter(Inverse functions)
 ## DBsection(1-1 functions)
@@ -93,7 +92,7 @@
     </row>
     <row bottom="minor">
       <cell>
-        2: 
+        2:
       </cell>
       <cell></cell><cell></cell>
       <cell>
@@ -102,7 +101,7 @@
    </row>
     <row bottom="minor">
       <cell>
-        3: 
+        3:
       </cell>
       <cell></cell><cell></cell>
       <cell>
@@ -128,11 +127,11 @@ Context()->texStrings;
 BEGIN_TEXT
 Determine whether the following functions are $BITALIC one-to-one$EITALIC or $BITALIC not. $EITALIC
 $BR$BR
-\{$popup1->menu\} $BBOLD 1. $EBOLD  Is the function f(x)=$ff(x)=$ff(x) = $f  one-to-one? 
+\{$popup1->menu\} $BBOLD 1. $EBOLD  Is the function f(x)=$ff(x)=$ff(x) = $f  one-to-one?
 $PAR
 \{$popup2->menu\} $BBOLD 2. $EBOLD  Is the function g(x)=$gg(x)=$gg(x) = $g  one-to-one?
 $PAR
-\{$popup3->menu\} 
+\{$popup3->menu\}
 $BBOLD 3. $EBOLD  Is the function h(x)=1xh(x)=1xh(x) = \displaystyle \frac{1}{x}  one-to-one?
 END_TEXT
 

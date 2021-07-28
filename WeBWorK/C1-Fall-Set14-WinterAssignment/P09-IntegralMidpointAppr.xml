@@ -3,7 +3,6 @@
 ##  Calculus: Midpoint rule
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Techniques of integration)
 ## DBsection(Approximation)
@@ -30,7 +29,7 @@
 </setup>
 
 <p>
-  Use the Midpoint Rule with the value of 
+  Use the Midpoint Rule with the value of
   <m>
     n = 4
   </m>

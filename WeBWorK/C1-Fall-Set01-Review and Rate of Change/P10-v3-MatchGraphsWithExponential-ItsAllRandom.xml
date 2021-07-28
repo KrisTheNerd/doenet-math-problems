@@ -7,7 +7,6 @@
 ##  Calculus: Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Algebra)
 ## DBchapter(Exponential and logarithmic expressions and functions)
 ## DBsection(Graphs)
@@ -26,7 +25,7 @@
 
 <setup>
   <selectFromSequence from="1" to="5" name="a" />
-  
+
   <select numberToSelect="4" assignNames="(fnA) (fnB) (fnC) (fnD)" withReplacement="false">
     <option>
       <function formula="e^x"/>
@@ -80,9 +79,9 @@
         A
       </caption>
     </figure>
-    
+
     <p></p><p></p>
-    
+
     <figure suppressFigureNameInCaption>
       <graph width="300" height="250" xmin="-8" xmax="8" ymin="-6" ymax="5">
         <curve name="cvC">
@@ -96,7 +95,7 @@
       </caption>
     </figure>
   </p>
-  
+
   <p>
     <figure suppressFigureNameInCaption>
       <graph width="300" height="250" xmin="-8" xmax="8" ymin="-6" ymax="5">
@@ -110,9 +109,9 @@
         B
       </caption>
     </figure>
-    
+
     <p></p><p></p>
-    
+
     <figure suppressFigureNameInCaption>
       <graph width="300" height="250" xmin="-8" xmax="8" ymin="-6" ymax="5">
         <curve name="cvD">

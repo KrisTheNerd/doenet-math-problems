@@ -1,5 +1,5 @@
-<!-- 
-  Restrict number of attempts? 
+<!--
+  Restrict number of attempts?
   Should only allow one.
 -->
 
@@ -7,7 +7,6 @@
 #DESCRIPTION
 ##  Calculus: Functions
 ##ENDDESCRIPTION
-
 
 ## DBsubject(Algebra)
 ## DBchapter(Transformations of functions and graphs)

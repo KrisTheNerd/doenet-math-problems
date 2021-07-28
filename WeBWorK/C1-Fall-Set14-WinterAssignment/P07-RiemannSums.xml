@@ -3,7 +3,6 @@
 ##  Calculus: Estimating area
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Techniques of integration)
 ## DBsection(Approximation)
@@ -41,9 +40,9 @@
 </setup>
 
 <p>
-  Use four rectangles to find an estimate of each type for the area under the graph of 
+  Use four rectangles to find an estimate of each type for the area under the graph of
   <m>f(x) = $f</m>
-  from 
+  from
   <m>x=1</m> to <m>x=5</m>.
 
   Round your answer to one decimal point.

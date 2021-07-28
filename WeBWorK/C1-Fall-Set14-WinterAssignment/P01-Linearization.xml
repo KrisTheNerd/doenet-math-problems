@@ -3,7 +3,6 @@
 ##  Calculus: Linear approximation
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Applications of differentiation)
 ## DBsection(Linear approximation and differentials)
@@ -37,12 +36,12 @@
 </setup>
 
 <p>
-  Find the linearization 
+  Find the linearization
   <m>L(x)</m> of the function <m>f(x) = $f</m> at <m>x=$a.</m>
 </p>
 
 <p>
-  Answer: 
+  Answer:
   <m>L(x)=</m>
   <answer>
     <award>

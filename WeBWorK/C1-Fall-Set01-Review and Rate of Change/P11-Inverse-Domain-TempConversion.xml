@@ -3,7 +3,6 @@
 ##  Calculus: Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Algebra)
 ## DBchapter(Inverse functions)
 ## DBsection(Finding the inverse function)
@@ -28,7 +27,7 @@
 </setup>
 
 <p>
-  The formula <m>C=\frac{5}{9}(F-32)</m>, 
+  The formula <m>C=\frac{5}{9}(F-32)</m>,
   where <m>F\geq -459.67</m>,
   expresses the Celsius temperature <m>C</m>
   as a function of Fahrenheit temerature <m>F</m>.

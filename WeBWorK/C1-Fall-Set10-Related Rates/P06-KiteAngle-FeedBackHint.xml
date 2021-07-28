@@ -1,0 +1,53 @@
+<!--
+#DESCRIPTION
+##  Calculus: Related rates
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Related rates)
+## Date(11/29/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(RelatedRate-FlyAKite)
+## MLTleader(1)
+## Level(5)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.1')
+## Problem1('30')
+## TitleText2('Calculus: Early Transcendentals')
+## AuthorText2('Stewart')
+## EditionText2('5')
+## Section2('3.10')
+## Problem2('24')
+## KEYWORDS('calculus', 'derivative', 'related rates','Differentiation','Product','Quotient')
+-->
+
+<setup>
+  <selectFromSequence from="50" to="100" step="25" name="a" />
+  <selectFromSequence from="2" to="8" step="2" name="b" />
+  <selectFromSequence from="150" to="300" step="50" name="c" />
+  <math name="ans" simplify>($a/$c^2)*$b</math>
+</setup>
+
+<p>
+  A kite <m>$a\text{ft}</m> above the ground moves horizontally at a speed of
+  <m>$b\text{ft/s}.</m>  At what rate is the angle between the string and the
+  horizontal decreasing when <m>$c\text{ft}</m> of string has been let out?
+</p>
+<p>
+  Answer (in radians per second):
+  <answer name="test"><award>$ans</award></answer>
+</p>
+
+<feedback condition="$test<0">
+  The problem is asking how fast the angle between the string and the horizontal is decreasing.
+  So the answer should be positive.
+</feedback>
+
+<solution>
+  Answer: $ans
+</solution>

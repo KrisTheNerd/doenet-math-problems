@@ -8,7 +8,6 @@
 ##  Calculus: Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Trigonometry)
 ## DBchapter(Trigonometric functions)
 ## DBsection(Combinations and compositions of functions)
@@ -67,7 +66,7 @@
 
 <p>
   Let <m>f(x)=$ff</m> and <m>g(x)=\displaystyle $gg</m>.
-  Find 
+  Find
   <m>f\circ g,</m>
   <m>g\circ f,</m>
   <m>f\circ f,</m>  and

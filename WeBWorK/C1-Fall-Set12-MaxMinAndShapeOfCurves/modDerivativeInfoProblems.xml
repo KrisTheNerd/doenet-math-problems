@@ -20,15 +20,15 @@
 ## KEYWORDS('calculus', 'derivative', 'maximum', 'minimum', 'increasing', 'decreasing', 'concavity')
 -->
 <module name="derivativeInfoProblem">
-  <moduleAttributeDefinitions>
-    <moduleAttribute componentType="function" attribute="f" defaultValue="x^4/4-x^2/2" assignNames="f" />
-    <moduleAttribute componentType="math" attribute="ans1" defaultValue="(-1,0)union(1,infinity)" assignNames="ans1" />
-    <moduleAttribute componentType="math" attribute="ans2" defaultValue="(-infinity,-1)union(0,1)" assignNames="ans2" />
-    <moduleAttribute componentType="math" attribute="ans3" defaultValue="(0,0)" assignNames="ans3" />
-    <moduleAttribute componentType="math" attribute="ans4" defaultValue="(-1,-1/4),(1,-1/4)" assignNames="ans4" />
-    <moduleAttribute componentType="math" attribute="ans5" defaultValue="(-infinity,-1/sqrt(3))union(1/sqrt(3),infinity)" assignNames="ans5" />
-    <moduleAttribute componentType="math" attribute="ans6" defaultValue="(-1/sqrt(3),1/sqrt(3))" assignNames="ans6" />
-  </moduleAttributeDefinitions>
+  <setup>
+    <customAttribute componentType="function" attribute="f" defaultValue="x^4/4-x^2/2" assignNames="f" />
+    <customAttribute componentType="math" attribute="ans1" defaultValue="(-1,0)union(1,infinity)" assignNames="ans1" />
+    <customAttribute componentType="math" attribute="ans2" defaultValue="(-infinity,-1)union(0,1)" assignNames="ans2" />
+    <customAttribute componentType="math" attribute="ans3" defaultValue="(0,0)" assignNames="ans3" />
+    <customAttribute componentType="math" attribute="ans4" defaultValue="(-1,-1/4),(1,-1/4)" assignNames="ans4" />
+    <customAttribute componentType="math" attribute="ans5" defaultValue="(-infinity,-1/sqrt(3))union(1/sqrt(3),infinity)" assignNames="ans5" />
+    <customAttribute componentType="math" attribute="ans6" defaultValue="(-1/sqrt(3),1/sqrt(3))" assignNames="ans6" />
+  </setup>
   <p>
     Let <m>f(x)=$f</m>.
     Answer the following questions.

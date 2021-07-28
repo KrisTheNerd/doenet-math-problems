@@ -3,7 +3,6 @@
 ##  Calculus: Optimization problems
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Applications of differentiation)
 ## DBsection(Optimization - engineering and physics)
@@ -33,7 +32,7 @@
     and row a boat at <m>$a \text{mph}</m>
     What is the shortest amount of time it would take her to reach point <m>C</m>?
 
-  <image 
+  <image
 source="http://drive.google.com/uc?export=view&id=1-UMTobVIeDwoa-8alKeotjzk3BXLH_ne" width="300px" description="Circle Diagram" />
 </p>
 

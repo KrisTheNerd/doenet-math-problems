@@ -3,7 +3,6 @@
 ##  Calculus: Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Algebra)
 ## DBchapter(Functions)
 ## DBsection(Domain and range)
@@ -25,9 +24,9 @@
   <selectFromSequence from="$a" to="7" name="b" />
   <selectFromSequence from="3" to="10" name="c" />
 </setup>
-  
+
 <p>Find the domain and range for the function
-<me>f(x) = 
+<me>f(x) =
   \begin{cases}
     $a x - <math simplify>2*$b</math>, &\text{if } x \le 2, \\
     $c - \frac{1}{2}x, &\text{if } x > 2.

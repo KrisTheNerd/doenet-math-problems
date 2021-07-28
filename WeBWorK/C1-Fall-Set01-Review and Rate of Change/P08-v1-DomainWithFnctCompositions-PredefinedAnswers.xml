@@ -8,7 +8,6 @@
 ##  Calculus: Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Trigonometry)
 ## DBchapter(Trigonometric functions)
 ## DBsection(Combinations and compositions of functions)
@@ -47,7 +46,7 @@
       <math simplify>[(x)/($c+x)]/[$c+(x)/($c+x)]</math>
     </option>
   </select>
-    
+
   <math format="latex" name="ans2">
     (-\infty,-$c)\cup(-$c,\infty)
   </math>
@@ -68,7 +67,7 @@
 
 <p>
   Let <m>f(x)=$f</m> and <m>g(x)=\dfrac{x}{4+x}</m>.
-  Find 
+  Find
   <m>f\circ g,</m>
   <m>g\circ f,</m>
   <m>f\circ f,</m>  and

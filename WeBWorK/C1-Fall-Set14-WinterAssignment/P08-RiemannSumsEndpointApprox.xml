@@ -3,7 +3,6 @@
 ##  Calculus: Estimating area
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Integrals)
 ## DBsection(Riemann sums)
@@ -42,7 +41,7 @@
   Find the estimates of the Riemann sums for
   <me>
     f(x)=$f,
-    \quad 0\leq x \leq \frac{3\pi}{2} 
+    \quad 0\leq x \leq \frac{3\pi}{2}
   </me>
   with six terms.
   Round your answer to one decimal place.

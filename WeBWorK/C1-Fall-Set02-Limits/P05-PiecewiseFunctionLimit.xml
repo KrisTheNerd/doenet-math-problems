@@ -3,7 +3,6 @@
 ##  Calculus: Limits of Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Limits and continuity)
 ## DBsection(One-sided limits - concept of)
@@ -23,7 +22,7 @@
 
 <setup>
   <selectFromSequence from="1" to="5" name="a" />
- 
+
   <math name="ans1" simplify>
     $a
   </math>
@@ -46,7 +45,7 @@
   If a limit \emph{does not exist},
   type \textbb{DNE}.
   <me>
-    f(x) = 
+    f(x) =
     \begin{cases}
       $a+\sin x, &\text{if } x < 0 \\
       $a \cos x, &\text{if } 0 \le x \le \pi \\

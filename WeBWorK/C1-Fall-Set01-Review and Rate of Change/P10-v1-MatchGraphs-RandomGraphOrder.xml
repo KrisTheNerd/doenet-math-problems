@@ -7,7 +7,6 @@
 ##  Calculus: Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Algebra)
 ## DBchapter(Exponential and logarithmic expressions and functions)
 ## DBsection(Graphs)
@@ -46,7 +45,7 @@
 <p>
   Match the functions with one of the graphs below.
 </p>
-  
+
 <sideBySide>
   <p>
     <figure suppressFigureNameInCaption>
@@ -57,9 +56,9 @@
         A
       </caption>
     </figure>
-    
+
     <p></p><p></p>
-    
+
     <figure suppressFigureNameInCaption>
       <graph width="300" height="250" xmin="-8" xmax="8" ymin="-6" ymax="5">
         $C
@@ -69,7 +68,7 @@
       </caption>
     </figure>
   </p>
-  
+
   <p>
     <figure suppressFigureNameInCaption>
       <graph width="300" height="250" xmin="-8" xmax="8" ymin="-6" ymax="5">
@@ -79,9 +78,9 @@
         B
       </caption>
     </figure>
-    
+
     <p></p><p></p>
-    
+
     <figure suppressFigureNameInCaption>
       <graph width="300" height="250" xmin="-8" xmax="8" ymin="-6" ymax="5">
         $D
@@ -187,7 +186,7 @@
    </row>
   </tabular>
 </solution>
-  
+
 <!--
 
 $p1 = FEQ("e^x for x in <-8,8> using color:blue weight:2");

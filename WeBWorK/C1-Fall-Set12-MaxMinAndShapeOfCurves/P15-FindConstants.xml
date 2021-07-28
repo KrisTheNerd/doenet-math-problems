@@ -3,7 +3,6 @@
 ##  Calculus: Sketching the graph of a function
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Applications of differentiation)
 ## DBsection(Global extrema)
@@ -33,7 +32,7 @@
 
 <p>
   For what values of the numbers <m>a</m> and
-  <m>b</m> does the function 
+  <m>b</m> does the function
   <m>\displaystyle f(x) = a x e^{b x^2}</m>
   have the maximum value <m>f($c)=$d.</m>
 </p>

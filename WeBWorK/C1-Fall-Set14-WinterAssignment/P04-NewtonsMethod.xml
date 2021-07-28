@@ -3,7 +3,6 @@
 ##  Calculus: Newton's method
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Applications of differentiation)
 ## DBsection(Newton's method)
@@ -25,126 +24,8 @@
   <selectFromSequence from="3" to="5" name="b" />
   <math name="c" simplify>$a+2</math>
   <function symbolic formula="x^($b)+$a*x-$c" name="f" />
-
-  <math name="ans1" simplify>
-    1+(1)/($b+$a)
-  </math>
-  <math name="ans2" simplify>
-    $ans1-(($ans1)^($b)+$a*($ans1)-$c)/($b*($ans1)^($b-1)+$a)
-  </math>
-  <math name="ans3" simplify>
-    $ans2-(($ans2)^($b)+$a*($ans2)-$c)/($b*($ans2)^($b-1)+$a)
-  </math>
 </setup>
 
-<p>
-  Use Newton's method with the specific initial value 
-  <m>
-    x_1 = 1
-  </m>
-  to approximate a solution of the equation
-  <me>
-    $f=0.
-  </me>
-</p>
-
-<p>
-  1.
-  <m>
-    x_2 =
-  </m>
-  <answer>
-    <award>
-      $ans1
-    </award>
-  </answer>
-</p>
-
-<p>
-  2.
-  <m>
-    x_3 =
-  </m>
-  <answer>
-    <award>
-      $ans2
-    </award>
-  </answer>
-</p>
-
-<p>
-  3.
-  <m>
-    x_4 =
-  </m>
-  <answer>
-    <award>
-      $ans3
-    </award>
-  </answer>
-</p>
-
-<solution>
-  <tabular>
-    <row bottom="minor">
-      <cell>
-        <m>x_2:</m>
-      </cell>
-      <cell></cell>
-      <cell></cell>
-      <cell>
-        $ans1
-      </cell>
-    </row>
-    <row bottom="minor">
-      <cell>
-        <m>x_3:</m>
-      </cell>
-      <cell></cell>
-      <cell></cell>
-      <cell>
-        $ans2
-      </cell>
-    </row>
-    <row bottom="minor">
-      <cell>
-        <m>x_4:</m>
-      </cell>
-      <cell></cell>
-      <cell></cell>
-      <cell>
-        $ans3
-      </cell>
-    </row>
-    <row bottom="minor">
-      <cell>
-        <m>x_2:</m>
-      </cell>
-      <cell></cell>
-      <cell></cell>
-      <cell>
-        <number>$ans1</number>
-      </cell>
-    </row>
-    <row bottom="minor">
-      <cell>
-        <m>x_3:</m>
-      </cell>
-      <cell></cell>
-      <cell></cell>
-      <cell>
-        <number>$ans2</number>
-      </cell>
-    </row>
-    <row bottom="minor">
-      <cell>
-        <m>x_4:</m>
-      </cell>
-      <cell></cell>
-      <cell></cell>
-      <cell>
-        <number>$ans3</number>
-      </cell>
-    </row>
-  </tabular>
-</solution>
+<copy f="$f"
+  initValue="1"
+  uri="doenet:contentId=d2dc1700033dc6386c41db53d0e79648df52f77d95b6ab831cb0aaa55b8a3a85"/>

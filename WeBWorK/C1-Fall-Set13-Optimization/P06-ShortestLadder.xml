@@ -3,7 +3,6 @@
 ##  Calculus: Optimization problems
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Applications of differentiation)
 ## DBsection(Optimization - general)
@@ -32,7 +31,7 @@
 <p>
   A fence
   <m>$b \text{ft}</m>
-  high runs parallel to a tall building at a distance of 
+  high runs parallel to a tall building at a distance of
   <m>$a \text{ft}</m>
   from the building.
   What is the length of the shortest ladder that will reach from the ground over the fence to the wall of the building?

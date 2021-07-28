@@ -8,7 +8,6 @@
 ##  Calculus: Limit laws
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Limits and continuity)
 ## DBsection(Finding limits using graphs)
@@ -46,19 +45,19 @@
 
 <p>
   Use the given graphs of the function
-  <m>f</m> (left, the <copy tname="cvA" prop="styleDescription" /> line) and 
+  <m>f</m> (left, the <copy tname="cvA" prop="styleDescription" /> line) and
   <m>g</m> (right, the <copy tname="cvA2" prop="styleDescription" /> line) to find the following limits:
 </p>
 
 <sideBySide>
 <figure suppressFigureNameInCaption>
-  <graph 
+  <graph
     width="$graphWidth"
     height="250"
     xmin="-3"
     xmax="3"
     ymin="-3"
-    ymax="3" 
+    ymax="3"
     >
     <curve name="cvA">
       <function formula="$b*x" domain="(-1,1)" />
@@ -75,13 +74,13 @@
   </graph>
 </figure>
 <figure suppressFigureNameInCaption>
-  <graph 
+  <graph
     width="$graphWidth"
     height="250"
     xmin="-3"
     xmax="3"
     ymin="-3"
-    ymax="3" 
+    ymax="3"
     styleNumber="2" >
     <curve name="cvA2">
       <function formula="[-(x-1.25)^2]/4+($a+1)" domain="(-3,1)" />

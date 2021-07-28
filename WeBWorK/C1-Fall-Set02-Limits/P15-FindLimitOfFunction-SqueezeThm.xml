@@ -3,7 +3,6 @@
 ##  Calculus: Limit laws
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Limits and continuity)
 ## DBsection(Squeeze theorem)
@@ -34,7 +33,7 @@
   <m>
     50 x - 35 x^2 \le g(x) \le 24 - 10 x^3 + x^4
   </m>
-  for all <m>x</m>, evaluate 
+  for all <m>x</m>, evaluate
   <m>\displaystyle \lim_{x \to $a} g(x).</m>
 </p>
 

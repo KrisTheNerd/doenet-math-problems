@@ -3,7 +3,6 @@
 ##  Calculus: l'Hospital's Rule
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Calculus - single variable)
 ## DBchapter(Applications of differentiation)
 ## DBsection(Indeterminate forms and L'Hopital's rule)
@@ -29,4 +28,4 @@
 
 <copy ans="$answer"
   limit="\lim_{x \to 1} \frac{x^{$a}-$a x + $b}{(x-1)^2}"
-  uri="doenet:contentId=e090260e60d2963a3b8aa0478184ab5f31e2f6f3f0989e0e94dbe644ec6ebe36"/>
+  uri="doenet:contentId=c5efca4a0cf9ea8f53c915e1c76fd1a01e2cf32f535c387fa9e30b8119bf1ac9"/>

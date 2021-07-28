@@ -3,7 +3,6 @@
 ##  Calculus: Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Algebra)
 ## DBchapter(Functions)
 ## DBsection(Compositions and combinations of functions)
@@ -44,7 +43,7 @@
 
 <p>
   Let <m>f(x)=$f</m> and <m>g(x)=$g</m>.
-  Find 
+  Find
   <m>f+g,</m>
   <m>f-g,</m>
   <m>f*g,</m>  and

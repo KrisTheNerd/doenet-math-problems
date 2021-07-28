@@ -3,7 +3,6 @@
 ##  Calculus: Functions
 ##ENDDESCRIPTION
 
-
 ## DBsubject(Algebra)
 ## DBchapter(Inverse functions)
 ## DBsection(Finding the inverse function)
@@ -81,7 +80,7 @@
     </row>
     <row bottom="minor">
       <cell>
-        Domain of Inverse: 
+        Domain of Inverse:
       </cell>
       <cell></cell><cell></cell>
       <cell>
