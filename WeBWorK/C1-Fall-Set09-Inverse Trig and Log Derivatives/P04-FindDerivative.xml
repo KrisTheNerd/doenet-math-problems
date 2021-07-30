@@ -1,0 +1,42 @@
+<!--
+#DESCRIPTION
+##  Calculus: Derivatives
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Differentiation)
+## DBsection(Implicit differentiation)
+## Date(11/23/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(xy_powers_inverse_trig)
+## Level(3)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('3.6')
+## Problem1('32')
+## KEYWORDS('calculus', 'derivative', 'inverse trigonometric functions', 'chain rule')
+-->
+
+<setup>
+  <selectFromSequence from="1" to="9" step="1" name="a" />
+  <selectFromSequence from="2" to="4" step="1" name="b" />
+  <math name="c" simplify>$b-1</math>
+  <math name="d" simplify>$b+1</math>
+  <math name="e" simplify>$b+2</math>
+  <math name="ans" simplify>($b*x^$c*y+$b*x^$d*y^3-y)/(x-x^$b-x^$e*y^2)</math>
+</setup>
+
+<p>
+  Find <m>y'</m> if <m>\displaystyle \arctan(x y)= $a + x^{$b}y.</m>
+</p>
+<p>
+  Answer: <m>\displaystyle y' = </m>
+  <answer><award>$ans</award></answer>
+</p>
+
+<solution>
+  <row>Answer: $ans</row>
+</solution>

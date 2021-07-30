@@ -1,0 +1,39 @@
+<!--
+#DESCRIPTION
+##  Calculus: Derivatives
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Differentiation)
+## DBsection(Quotient rule (without trigonometric functions))
+## Date(11/23/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(quotRuleNoTrigLn)
+## Level(2)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('3.7')
+## Problem1('22')
+## KEYWORDS('calculus', 'derivative', 'logarithmic functions', 'quotient rule')
+-->
+
+<setup>
+  <selectFromSequence from="2" to="5" step="1" name="a" />
+  <math name="b" simplify>$a+1</math>
+  <math name="ans" simplify>(1-$a*ln(x))/(x^$b)</math>
+</setup>
+
+<p>
+  Differentiate <m>\displaystyle y = \frac{\ln x}{x^{$a}}.</m>
+</p>
+<p>
+  <m>\displaystyle y' = </m>
+  <answer><award>$ans</award></answer>
+</p>
+
+<solution>
+  <row>Answer: $ans</row>
+</solution>

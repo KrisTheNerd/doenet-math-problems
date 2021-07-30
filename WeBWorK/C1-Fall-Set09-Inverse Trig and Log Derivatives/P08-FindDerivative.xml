@@ -1,0 +1,39 @@
+<!--
+#DESCRIPTION
+##  Calculus: Derivatives
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Differentiation)
+## DBsection(Chain rule (without trigonometric functions))
+## Date(11/23/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(Chain-LogOfSqrtOfFraction)
+## Level(3)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('3.7')
+## Problem1('16')
+## KEYWORDS('calculus', 'derivative', 'logarithmic functions')
+-->
+
+<setup>
+  <selectFromSequence from="2" to="6" step="1" name="a" />
+  <math name="a2" simplify>$a^2</math>
+  <math name="ans" simplify>-z/($a2-z^2)-z/($a2+z^2)</math>
+</setup>
+
+<p>
+  Differentiate <m>H(z) = \ln\sqrt{\displaystyle \frac{$a2-z^2}{$a2+z^2}}.</m>
+</p>
+<p>
+  Answer: <m>\displaystyle H'(z) = </m>
+  <answer><award>$ans</award></answer>
+</p>
+
+<solution>
+  <row>Answer: $ans</row>
+</solution>
