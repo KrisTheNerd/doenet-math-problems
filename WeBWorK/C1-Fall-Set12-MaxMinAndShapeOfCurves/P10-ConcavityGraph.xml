@@ -1,0 +1,94 @@
+<!--
+#DESCRIPTION
+##  Calculus: Sketching the graph of a function
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Concavity and points of inflection)
+## Date(01/18/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## Level(3)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.3')
+## Problem1('2')
+## KEYWORDS('calculus', 'graph', 'derivative', 'concavity', 'point of inflection')
+-->
+
+<setup>
+  <selectFromSequence from="-2" to="1" name="a" />
+  <math name="ans1">(0,2)union(5,8)</math>
+  <math name="ans2">(2,4)union(5,8)</math>
+  <math name="ans3" simplify>(2,4+$a),(5,4+$a)</math>
+</setup>
+
+<p>
+  Use the given graph of the function <m>f</m> to answer the following questions.
+</p>
+
+<figure suppressFigureNameInCaption>
+  <graph
+    width="400"
+    height="400"
+    xmin="-1"
+    xmax="8"
+    ymin="-1"
+    ymax="8"
+    >
+    <curve><function formula="3*(x-1)^2+3+$a" domain="(0,1)" /></curve>
+    <curve><function formula="(x-1)^2+3+$a" domain="(1,2)" /></curve>
+    <curve><function formula="-(x-3)^2+5+$a" domain="(2,3)" /></curve>
+    <curve><function formula="-3*(x-3)^2+5+$a" domain="(3,4)" /></curve>
+    <curve><function formula="-2*(x-5)^2+4+$a" domain="(4,5)" /></curve>
+    <curve><function formula="(2/9)*(x-5)^2+4+$a" domain="(5,8)" /></curve>
+  </graph>
+</figure>
+
+<p>
+  <row>
+    1.
+    Find the largest \emph{open} interval(s) on which <m>f</m> is concave upward.
+    If there is more than one interval, write your answer as a union of the intervals.
+  </row>
+
+  <row>
+    Answer (in interval notation):
+    <answer><award>$ans1</award></answer>
+  </row>
+</p>
+
+<p>
+  <row>
+    2.
+    Find the largest \emph{open} interval(s) on which <m>f</m> is concave downward.
+    If there is more than one interval, write your answer as a union of the intervals.
+  </row>
+
+  <row>
+    Answer (in interval notation):
+    <answer><award>$ans2</award></answer>
+  </row>
+</p>
+
+<p>
+  <row>
+    3.
+    Find the coordinates of the points of inflection.
+    List your answers as points in the form <m>(a,b)</m>.
+  </row>
+
+  <row>
+    Answer (separate by commas):
+    <answer><award unorderedCompare>$ans3</award></answer>
+  </row>
+</p>
+
+<solution>
+  <row>1: <m>$ans1</m></row>
+  <row>2: <m>$ans2</m></row>
+  <row>3: <m>$ans3</m></row>
+</solution>

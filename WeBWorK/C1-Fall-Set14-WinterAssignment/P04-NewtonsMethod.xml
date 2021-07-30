@@ -1,0 +1,31 @@
+<!--
+#DESCRIPTION
+##  Calculus: Newton's method
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Newton's method)
+## Date(02/01/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(NMIterationsPoly)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.7')
+## Problem1('5')
+## KEYWORDS('calculus', 'derivative', 'newton's method')
+-->
+
+<setup>
+  <selectFromSequence from="2" to="5" name="a" />
+  <selectFromSequence from="3" to="5" name="b" />
+  <math name="c" simplify>$a+2</math>
+  <function symbolic formula="x^($b)+$a*x-$c" name="f" />
+</setup>
+
+<copy f="$f"
+  initValue="1"
+  uri="doenet:contentId=d2dc1700033dc6386c41db53d0e79648df52f77d95b6ab831cb0aaa55b8a3a85"/>

@@ -1,0 +1,67 @@
+<!--
+#DESCRIPTION
+##  Calculus: Maximum and minimum values
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Global extrema)
+## Date(01/11/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(GlobalExtremes_Cubic)
+## Level(2)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.2')
+## Problem1('44')
+## KEYWORDS('calculus', 'derivative', 'maximum', 'minimum')
+-->
+
+<setup>
+  <selectFromSequence from="1" to="10" name="a" />
+  <selectFromSequence from="1" to="3" name="b" />
+  <math name="c" simplify>$b+2</math>
+  <math name="d" simplify>$b+3</math>
+  <math name="coef1" simplify>3*($b+1)</math>
+  <math name="coef1" simplify>3*$b*$c</math>
+  <function name="f" symbolic formula="x^3-$coef1*x^2+$coef2*x+$a" />
+  <math name="ans1" simplify>($a^2/2)</math>
+  <math name="ans2" simplify>-($a^2/2)</math>
+</setup>
+
+<p>
+  Find the absolute maximum and absolute minimum values of
+  <m>f(x) = $f</m>
+  on the interval
+  <m>[-1,$d].</m>
+</p>
+
+<p>
+  <row>
+    1.
+    Find the absolute maximum of <m>f</m> on the interval.
+  </row>
+  <row>
+    Answer:
+    <answer><award>$ans1</award></answer>
+  </row>
+</p>
+
+<p>
+  <row>
+    2.
+    Find the absolute minimum of <m>f</m> on the interval.
+  </row>
+  <row>
+    Answer:
+    <answer><award>$ans2</award></answer>
+  </row>
+</p>
+
+<solution>
+  <row>1: <m>$ans1</m></row>
+  <row>2: <m>$ans2</m></row>
+</solution>

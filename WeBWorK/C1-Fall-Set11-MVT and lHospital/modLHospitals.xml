@@ -1,0 +1,20 @@
+<module name="lHospitals">
+  <setup>
+    <customAttribute componentType="me"
+      attribute="limit"
+      defaultValue="\lim_{x \to 1} \frac{x^{3}-3 x + 2}{(x-1)^2}"
+      assignNames="limit" />
+    <customAttribute componentType="math"
+      attribute="ans"
+      defaultValue="3"
+      assignNames="ans" />
+  </setup>
+  <p>
+    Find the limit.  Use l'Hospital's Rule where appropriate.
+    $limit
+    Limit: <answer><award>$ans</award></answer>
+  </p>
+  <solution>
+    Answer: $ans
+  </solution>
+</module>

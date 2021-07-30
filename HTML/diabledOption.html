@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<style>
+
+select:invalid,
+select option[value=""] {
+  color: #999999;
+}
+
+/*Added for browser compatibility*/
+[hidden] {
+  display: none;
+}
+
+</style>
+
+<html>
+<body>
+
+<h1>The option disabled attribute</h1>
+
+<label for="sel">Choose an option:</label>
+
+<select required id="sel">
+  <option selected value="" disabled>Answer:</option>
+  <option value="opt1">Stuffy</option>
+  <option value="opt2">Stuff</option>
+  <option value="opt3">McStuffen</option>
+</select>
+
+</body>
+</html>

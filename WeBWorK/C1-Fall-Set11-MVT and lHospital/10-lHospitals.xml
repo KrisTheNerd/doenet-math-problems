@@ -1,0 +1,29 @@
+<!--
+#DESCRIPTION
+##  Calculus: l'Hospital's Rule
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Indeterminate forms and L'Hopital's rule)
+## Date(12/09/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(Indeterminate-FunctionsInExponent)
+## Level(3)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.5')
+## Problem1('44')
+## KEYWORDS('calculus', 'derivative', 'l'hospital's rule')
+-->
+
+<setup>
+  <selectFromSequence from="2" to="8" step="2" name="a" />
+</setup>
+
+<copy ans="$a"
+  limit="\lim_{x \to \infty} x^{(\ln $a)/(1+\ln x)}"
+  uri="doenet:contentId=c5efca4a0cf9ea8f53c915e1c76fd1a01e2cf32f535c387fa9e30b8119bf1ac9"/>

@@ -1,0 +1,42 @@
+<!--
+#DESCRIPTION
+##  Calculus: Related rates
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Related rates)
+## Date(11/29/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(RelatedRate-ExpandingSpill)
+## Level(4)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.1')
+## Problem1('2')
+## KEYWORDS('calculus', 'derivative', 'related rates')
+-->
+
+<setup>
+  <selectFromSequence from="1" to="3" step="1" name="a" />
+  <selectFromSequence from="15" to="75" step="5" name="b" />
+  <math name="ans" simplify>2*pi*$b*$a</math>
+</setup>
+
+<p>
+  Suppose oil spills from a ruptured tanker and spreads in a circular pattern.
+   If the radius of the oil spill increases at a constant rate of
+   <m>$a\text{m/s,}</m> how fast is the area of the spill increasing
+   when the radius is <m>$b\text{m}</m>?
+</p>
+<p>
+  Answer (in <m>\text{m}^2/\text{s}</m>):
+  <answer><award>$ans</award></answer>
+</p>
+
+<solution>
+  Answer: $ans
+</solution>

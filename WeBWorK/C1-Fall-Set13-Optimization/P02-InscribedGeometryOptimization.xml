@@ -1,0 +1,67 @@
+<!--
+#DESCRIPTION
+##  Calculus: Optimization problems
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Optimization - general)
+## Date(01/25/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(Optimization_Inscribe3D_general)
+## Level(5)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.6')
+## Problem1('19')
+## KEYWORDS('calculus', 'derivative', 'optimization')
+-->
+
+<setup>
+  <selectFromSequence from="1" to="8" name="a" />
+  <math name="ans1">
+    4/(3*sqrt(3))*pi*r^3
+  </math>
+  <math name="ans2" simplify>
+    4/(3*sqrt(3))*pi*($a)^3
+  </math>
+</setup>
+
+<p>
+  A right circular cylinder is inscribed in a
+  sphere of radius <m>r.</m>  Find the largest
+  possible volume of such a cylinder.
+</p>
+<image 
+source="http://drive.google.com/uc?export=view&id=1QTyh5DN45SKm60wdAdRGVt0Fhhu969VX" width="263px" height="260px" description="Cylinder Inscribed in Sphere Diagram" />
+<p>
+  Answer:
+  <m>V=</m>
+  <answer>
+    <award>
+      $ans1
+    </award>
+  </answer>
+</p>
+
+<p>
+  If <m>r=6</m>, find the largest possible volume of
+  the inscribed cylinder.
+  <answer>
+    <award>
+      $ans2
+    </award>
+  </answer>
+</p>
+
+<solution>
+  <p>
+    $ans1
+  </p>
+  <p>
+    $ans2
+  </p>
+</solution>

@@ -1,0 +1,9 @@
+<module name="m">
+  <moduleAttributeDefinitions>
+    <moduleAttribute componentType="text" attribute="item" 
+        defaultValue="who?" assignNames="item" />
+  </moduleAttributeDefinitions>
+  Hello $item!
+</module>
+
+<copy tname="m" item="friend"/>

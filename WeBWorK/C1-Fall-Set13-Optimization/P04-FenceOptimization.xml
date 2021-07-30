@@ -1,0 +1,56 @@
+<!--
+#DESCRIPTION
+##  Calculus: Optimization problems
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Optimization - general)
+## Date(01/25/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(Optimization_Rectangles)
+## Level(5)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('4.6')
+## Problem1('6')
+## KEYWORDS('calculus', 'derivative', 'optimization')
+-->
+
+<setup>
+  <selectFromSequence from="50" to="1000" step="50" name="a" />
+  <math name="ans1">sqrt($a)</math>
+  <math name="ans2">sqrt($a)</math>
+</setup>
+
+<p>
+  Find the dimensions
+  <m>l \times w</m>
+  of a rectangle with area
+  <m>$a \text{yds}^2.</m>
+  whose perimeter is as small as possible.
+</p>
+
+<p>
+  Answer (in sq. yds.):
+  <m>l=</m>
+  <answer>
+    <award>
+      $ans1
+    </award>
+  </answer>
+  and
+  <m>w=</m>
+  <answer>
+    <award>
+      $ans2
+    </award>
+  </answer>
+</p>
+
+<solution>
+  The answer is a square, so each side length is <m>$ans1</m>.
+</solution>

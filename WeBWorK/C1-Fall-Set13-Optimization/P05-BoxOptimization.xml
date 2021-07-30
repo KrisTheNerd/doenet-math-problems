@@ -1,0 +1,146 @@
+<!--
+## DESCRIPTION
+## Calculus
+## ENDDESCRIPTION
+
+## Tagged by tda2d
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Applications of differentiation)
+## DBsection(Optimization - general)
+## Date(01/25/2011)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLTleader(1)
+## MLT(BoxOpenTopMaxVol)
+## Level(5)
+## MO(1)
+## TitleText1('Calculus: Early Transcendentals')
+## AuthorText1('Rogawski')
+## EditionText1('1')
+## Section1('4.6')
+## Problem1('')
+## TitleText2('Calculus: Early Transcendentals')
+## AuthorText2('Stewart')
+## EditionText2('5')
+## Section2('4.7')
+## Problem2('')
+## TitleText3('Calculus: Early Transcendentals')
+## AuthorText3('Stewart')
+## EditionText3('6')
+## Section3('4.7')
+## Problem3('')
+## TitleText4('Calculus I')
+## AuthorText4('Jerrold Marsden and Alan Weinstein')
+## EditionText4('2')
+## Section4('.')
+## Problem4('')
+## TitleText5('Calculus')
+## AuthorText5('Dale Varberg, Edwin J. Purcell, and Steven E. Rigdon')
+## EditionText5('9')
+## Section5('.')
+## Problem5('')
+## TitleText6('Calculus: Concepts and Contexts')
+## AuthorText6('Stewart')
+## EditionText6('4 Custom UMTYMP Ed.')
+## Section6('4.6')
+## Problem6('11')
+## KEYWORDS('maximization' 'minimization' 'derivatives' 'optimization','Optimization', 'Box','Differentiation','Calculus','Derivatives', 'derivative', 'optimization')
+
+## Original: /Library/Indiana/Indiana_setDerivatives10_5Optim/nsc4_6_3.pg
+-->
+
+<setup>
+  <selectFromSequence name="area" from="900" to="1800" step="100" />
+  <math name="width" simplify>
+    ($area/3)^(1/2)
+  </math>
+  <math name="height" simplify>
+    ($area-$width^2)/(4*$width)
+  </math>
+
+  <!-- How to specify units? cm^3? -->
+  <math name="vol" simplify>
+    ($width^2) * $height
+  </math>
+  
+</setup>
+
+<p>
+  If $area square centimeters of material is available 
+  to make a box with a square base and an open top, 
+  find the largest possible volume of the box.
+</p>
+
+<p>
+  Volume =
+  <answer symbolicEquality>
+    <award allowedErrorIsAbsolute allowedErrorInNumbers=".05">
+      <math>
+        <number displayDecimals="1">
+          $vol
+        </number> cm^3
+      </math>
+    </award>
+  </answer> (include units)
+</p>
+
+<solution>
+  <p>
+    To solve this problem, we will need to write
+    a formula for the volume of the box in terms 
+    of one of its dimensions, and then use derivatives
+    to find the dimensions at which the box has a
+    maximum volume.  Let <m>x</m> be the length of
+    the sides of the square base. 
+    Then, if <m>h</m> is the height of the box, the 
+    volume is given by <m>x^2h</m>.  We need to 
+    find an expression for the height <m>h</m>
+    in terms of <m>x</m>.
+  </p>
+
+  <p>
+    This is where we use our information about the
+    amount of material used in constructing the box.  
+    If the base of the box has sides of length <m>x</m>,
+    then <m>x^2</m> square centimeters of material
+    are used to make the base. Therefore, we have
+    only <m>$area - x^2</m> square centimeters of 
+    material left to make the sides, of which there
+    are four.  Each of the sides uses <m>hx</m> square
+    centimeters of material. Therefore, we get the
+    formula:
+    <me>
+      $area-x^2 = 4(hx) \Rightarrow h = \frac{$area-x^2}{4x}
+    </me>
+    Plugging this into our formula for volume, we 
+    can now write out <m>v(x)</m> as:
+    <me>
+      v(x)
+        = x^2\left(\frac{$area-x^2}{4x}\right)
+        = \frac{{$area}x - x^3}{4}
+    </me>
+    Now, we take the derivative of this expression,
+    using the rules for taking derivatives of 
+    polynomials, to get
+    <m> v'(x) = \frac{$area}{4} - \frac{3}{4}x^2</m>.
+    Setting this equal to 0 will give us the critical
+    points.  When solving, remember that this is a 
+    real world situation, so we can not have a negative
+    value for <m>x</m> (which is a length).
+    <me>
+      \begin{array}{rcl}
+        v'(x) & = & 0 \\
+        \frac{$area}{4} - \frac{3}{4}x^2 & = & 0 \\
+        \frac{3}{4}x^2 & = & \frac{$area}{4} \\
+        x^2 & = & \frac{$area}{3} \\
+        x & = & \sqrt{\frac{$area}{3}} \approx 
+      <number displayDecimals="2">$width</number> \\
+     \end{array}
+    </me>
+    Now, plugging this width into our formula for volume,
+    <m>v(x)</m>, we get the maximal volume of
+    <m>v(<number displayDecimals="2">$width</number>)
+      = <number displayDecimals="2">$vol</number></m>.
+  </p>
+</solution>
