@@ -1,0 +1,65 @@
+##DESCRIPTION
+##  Dummy Problem to direct students to a Survey Monkey Evaluation of WeBWorK
+##ENDDESCRIPTION
+
+##KEYWORDS('algebra', 'inequality', 'fraction')
+
+## Author('Jonathan Rogness')
+## Institution('University of Minnesota')
+
+########################################################################
+
+DOCUMENT();
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Print problem number and point value (weight) for the problem
+TEXT(beginproblem());
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+##############################################################
+#
+#  Setup
+#
+#
+Context("Numeric");
+
+$answer = Compute("111211211");
+
+##############################################################
+#
+#  Text
+#
+#
+
+Context()->texStrings;
+BEGIN_TEXT
+
+Please click on the following link to complete the course evaluation for this semester.  At the end of the survey you'll be given an answer which you can enter in the blank below for credit on this problem.
+$BR
+$BR
+\{ htmlLink("https://umn.qualtrics.com/jfe/form/SV_2c5h5bFjkae01lH","Fall Course Evaluation") \}
+$BR
+$BR
+Answer given at the end of the survey: \{ ans_rule(15) \}
+END_TEXT
+Context()->normalStrings;
+
+##############################################################
+#
+#  Answers
+#
+#
+
+ANS($answer->cmp);
+
+
+
+ENDDOCUMENT();
