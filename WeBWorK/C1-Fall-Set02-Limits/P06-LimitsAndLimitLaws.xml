@@ -48,7 +48,7 @@
     \displaystyle \lim_{x \to 2} f(x) = $a \qquad \lim_{x \to 2} g(x) = $b \qquad \lim_{x \to 2} h(x) = 0,
   </me>
   find the following limits.
-  If a limit \emph{does not exist}, type \textbf{DNE}.
+  If a limit <em>does not exist</em>, type <alert>DNE</alert>.
 </p>
 
 <p>

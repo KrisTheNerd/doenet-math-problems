@@ -1,0 +1,94 @@
+<!--
+#DESCRIPTION
+##  Calculus: Implicit differentiation
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Differentiation)
+## DBsection(Implicit differentiation)
+## Date(11/11/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(xy_poly_ht_vt)
+## MLTleader(1)
+## Level(4)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('3.5')
+## Problem1('')
+## KEYWORDS('calculus', 'derivative', 'implicit differentiation', 'tangent line', 'parabola')
+-->
+
+<setup>
+  <selectFromSequence from="1" to="5" step="1" name="a" />
+  <selectFromSequence from="1" to="5" step="1" name="b" />
+  <math name="f" simplify="numbers">
+    x^2-2*x*y+y^2+(2*$b-2*$a)*x+(2*$a-2*$b-4)*y+($a^2-2*$a*$b+$b^2+4*$b)
+  </math>
+  <math name="ans1" simplify>($a, $b)</math>
+  <math name="ans2" simplify>($a-1, $b+1)</math>
+</setup>
+
+<p>
+  <row>
+    Use implicit differentiation to find the
+    points where the <alert>parabola</alert> defined by
+    <me>$f = 0</me>
+    has horizontal and vertical tangent lines.
+  </row>
+  <row>
+    The parabola has horizontal tangent lines
+    at the point(s)
+    <answer><award>$ans1</award></answer>
+  </row>
+  <row>
+    The parabola has vertical tangent lines
+    at the point(s)
+    <answer><award>$ans2</award></answer>
+  </row>
+</p>
+
+<solution>
+  <setup>
+    <math name="amb" simplify>$a-$b</math>
+    <math name="ambm2" simplify>$a - $b - 2</math>
+    <math name="amb2p4b" simplify>($a - $b)^2 + 4*$b</math>
+    <math name="fb" simplify>4*$b</math>
+    <math name="ft1pb" simplify>4*(1 + $b)</math>
+    <math name="f_revised" simplify="numbers">(x - y)^2 - 2*($amb)*(x - y) + $amb2p4b - 4*y</math>
+    <math name="mfx" simplify>y - x + $amb</math>
+    <math name="fy" simplify>y - x + $ambm2</math>
+    <m name="df">
+      2x-2y-2x\;dy\;dx+2y\;dy\;dx<math simplify>-2*$amb+2$ambm2</math>\;dy\;dx
+    </m>
+  </setup>
+  <row>
+    Differentiating implicitly with respect to <m>x</m>
+    gives <me>$df = 0,</me> or
+    <me>($fy) \, \frac{dy}{dx} = $mfx, </me>
+    and so
+    <me>\frac{dy}{dx} = \frac{$mfx}{$fy}.</me>
+    The tangent line to the parabola is
+    horizontal where <me>\frac{dy}{dx} = 0,</me>
+    i.e., where <m>x - y = $amb</m>.  The
+    equation of the parabola can be written
+    in the form <me>$f_revised = 0,</me>
+    and <m>x - y = $amb</m> gives <m>$fb = 4y</m>,
+    or <m>y = $b</m>, and <m>x = $a</m>.
+    Hence, the tangent line to the parabola is
+    horizontal at the point <m>$ans1</m>
+    and nowhere else.
+  </row>
+  <row>
+    The tangent line the the parabola is vertical where
+    <me>0 = \frac{dx}{dy} = \frac{$fy}{$mfx},</me>
+    i.e., where <m>x - y = $ambm2</m>. Together with
+    the last displayed equation of the parabola, this gives
+    <m>$ft1pb - 4y = 0</m>, or <m>y = $an2b</m>,
+    and <m>x = $an2a</m>. Hence, the tangent
+    line to the parabola is vertical at the
+    point <m>$ans2</m> and nowhere else
+  </row>
+</solution>

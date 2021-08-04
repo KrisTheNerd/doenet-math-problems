@@ -1,0 +1,103 @@
+<!--
+#DESCRIPTION
+##  Calculus: Implicit differentiation
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Differentiation)
+## DBsection(Implicit differentiation)
+## Date(11/11/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(xy_poly_tangent_equation)
+## Level(3)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('3.5')
+## Problem1('28')
+## KEYWORDS('calculus', 'derivative', 'implicit differentiation', 'tangent line')
+-->
+
+<setup>
+  <!--  Maybe better? Why or why not?
+
+    <select assignNames="(a b)">
+      <option><math>2</math><math>3</math></option>
+      <option><math>2</math><math>5</math></option>
+      <option><math>2</math><math>7</math></option>
+      <option><math>2</math><math>9</math></option>
+      <option><math>3</math><math>2</math></option>
+      <option><math>3</math><math>4</math></option>
+      <option><math>3</math><math>5</math></option>
+      <option><math>3</math><math>7</math></option>
+      <option><math>3</math><math>8</math></option>
+      <option><math>4</math><math>3</math></option>
+      <option><math>4</math><math>5</math></option>
+      <option><math>4</math><math>7</math></option>
+      <option><math>4</math><math>9</math></option>
+      <option><math>5</math><math>2</math></option>
+      <option><math>5</math><math>3</math></option>
+      <option><math>5</math><math>4</math></option>
+      <option><math>5</math><math>6</math></option>
+      <option><math>5</math><math>7</math></option>
+      <option><math>5</math><math>8</math></option>
+      <option><math>5</math><math>9</math></option>
+    </select>
+  -->
+  <selectFromSequence from="2" to="5" step="1" name="a" />
+  <selectFromSequence from="2" to="9" step="1" name="b" exclude="$a/2 3*$a/2 $a 2*$a 3*$a 4*$a" />
+
+  <math name="a2" simplify>$a^2</math>
+  <math name="xo" simplify>0</math>
+  <select assignNames="(yo)">
+    <option><math>-$a</math></option>
+    <option><math>$a</math></option>
+  </select>
+  <math name="P">($xo,$yo)</math>
+  <function symbolic name="G" formula="y^2*(y^2 - $a2)" />
+  <function symbolic name="F" formula="x^2*(x^2 - $b)" />
+  <math name="tan_line">y=$yo</math>
+</setup>
+
+<p>
+  Use implicit differentiation to find
+  an equation of the tangent line to the
+  <alert>devil's curve</alert>, defined by
+  <m> $G = $F </m>, at the point <m>$P</m>.
+</p>
+<p>
+  An equation of the
+  tangent line to the devil's curve at
+  the given point is
+  <answer><award>$tan_line</award></answer>
+</p>
+
+<solution>
+  <setup>
+    <math name="ta2" simplify>2*$a^2</math>
+    <math name="tb" simplify>2*$b</math>
+    <math name="tyo3" simplify>2*$yo^3</math>
+  </setup>
+  Writing the equation as
+  <m>y^4 - $a2 y^2 = x^4 - $b x^2</m>,
+  and then differentiating implicitly
+  with respect to <m>x</m>, gives
+  <me>
+    (4 y^3 - $ta2 y) \, \frac{dy}{dx}
+      = 4 x^3 - $tb x.
+  </me>
+  If <m>x = $xo</m> and <m>y = $yo</m>,
+  then this last equation becomes
+  <me>
+    $tyo3 \, \frac{dy}{dx} = 0,
+    \qquad \text{and so} \qquad
+    \frac{dy}{dx} = 0,
+  </me>
+  which means that the tangent line
+  is horizontal.  Therefore, the
+  tangent line to the devil's curve
+  at the point <m>$P</m> is defined
+  by the equation <m>$tan_line</m>.
+</solution>

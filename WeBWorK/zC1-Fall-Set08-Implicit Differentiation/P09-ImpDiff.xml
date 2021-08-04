@@ -1,0 +1,82 @@
+<!--
+#DESCRIPTION
+##  Calculus: Implicit differentiation
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Differentiation)
+## DBsection(Implicit differentiation)
+## Date(11/11/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(xy_poly_ht_vt)
+## Level(4)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('3.5')
+## Problem1('')
+## KEYWORDS('calculus', 'derivative', 'implicit differentiation', 'tangent line', 'circle')
+-->
+
+<setup>
+  <selectFromSequence from="1" to="5" step="2" name="a" />
+  <selectFromSequence from="2" to="4" step="2" name="b" />
+  <selectFromSequence from="2" to="5" step="1" name="c" />
+  <math name="d" simplify="numbers">$c^2-$a^2-$b^2</math>
+  <math name="f" simplify="numbers">x^2+y^2-2*$a*x-2*$b*y</math>
+  <math name="ans1" simplify>($a,$b+$c),($a,$b-$c)</math>
+  <math name="ans2" simplify>($a+$c,$b),($a-$c,$b)</math>
+</setup>
+
+<p>
+  Use implicit differentiation to find the
+  points where the <alert>circle</alert> defined by
+  <me>$f = $d</me> has horizontal and vertical
+  tangent lines.
+</p>
+<p>
+  The circle has horizontal tangent lines
+  at the point(s)
+  <answer unorderedCompare><award>$ans1</award></answer>
+</p>
+<p>
+  The circle has vertical tangent lines
+  at the point(s)
+  <answer unorderedCompare><award>$ans2</award></answer>
+</p>
+
+<solution>
+  <setup><math name="c2" simplify>$c^2</math></setup>
+  <p>
+    By completing squares, the equation of
+    the circle can be written as
+    <me>(x - $a)^2 + (y - $b)^2 = $c2.</me>
+    Then, differentiating implicitly with respect
+    to <m>x</m>, gives
+    <me>2(x - $a) + 2(y - $b) \, \frac{dy}{dx} = 0,</me>
+    or
+    <me>\frac{dy}{dx} = - \frac{x - $a}{y - $b}.</me>
+    The tangent line to the circle is horizontal
+    where <m>\frac{dy}{dx} = 0</m>, i.e., where
+    <m>x = $a</m>, which gives <m>(y - $b)^2 = $c2</m>,
+    or <m>y = $b \pm $c = $an1a, $an1b</m>.
+    Hence, the tangent line to the circle is
+    horizontal at the points <m>$ans1</m>.
+  </p>
+  <p>
+    The tangent line to the circle is vertical where
+    <me>0 = \frac{dx}{dy} = - \frac{y - $b}{x - $a},</me>
+    i.e., where <m>y = $b</m>, which gives
+    <m>(x - $a)^2 = $c2</m>,
+    or <m>x = $a \pm $c = $an2a, $an2b</m>.
+    Hence, the tangent line to the circle is
+    vertical at the points <m>$ans2</m>.
+  </p>
+  <p>
+    (Notice that this problem could be solved
+    without differentiating, once the centre
+    and radius of the circle are identified.)
+  </p>
+</solution>

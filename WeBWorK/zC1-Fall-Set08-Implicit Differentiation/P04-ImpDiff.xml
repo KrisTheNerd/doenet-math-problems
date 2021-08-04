@@ -1,0 +1,37 @@
+<!--
+#DESCRIPTION
+##  Calculus: Implicit differentiation
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Differentiation)
+## DBsection(Implicit differentiation)
+## Date(11/10/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## Level(3)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('3.5')
+## Problem1('13')
+## KEYWORDS('calculus', 'derivative', 'implicit differentiation')
+-->
+
+<setup>
+  <selectFromSequence from="2" to="6" step="1" name="a" />
+  <selectFromSequence from="2" to="8" step="1" name="b" />
+  <math name="ans" simplify>($a-(e^(x/y)/y))/($b-((x*e^(x/y))/y^2))</math>
+</setup>
+
+<p>
+  Find  <m>y'</m> by implicit differentiation.
+  <me>e^{x/y} = $a x - $b y</me>
+  Answer: <m>\displaystyle y' =</m>
+  <answer><award>$ans</award></answer>
+</p>
+
+<solution>
+  <row>Answer: $ans</row>
+</solution>

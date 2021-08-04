@@ -42,8 +42,8 @@
 
 <p>
   Sketch the graph of the following function and use it to determine the following limits.
-  If a limit \emph{does not exist},
-  type \textbb{DNE}.
+  If a limit <em>does not exist</em>,
+  type <alert>DNE</alert>.
   <me>
     f(x) =
     \begin{cases}

@@ -51,7 +51,7 @@
 <p>
   <row>
     1.
-    Find the largest \emph{open} interval(s) on which <m>f</m> is concave upward.
+    Find the largest <em>open</em> interval(s) on which <m>f</m> is concave upward.
     If there is more than one interval, write your answer as a union of the intervals.
   </row>
 
@@ -64,7 +64,7 @@
 <p>
   <row>
     2.
-    Find the largest \emph{open} interval(s) on which <m>f</m> is concave downward.
+    Find the largest <em>open</em> interval(s) on which <m>f</m> is concave downward.
     If there is more than one interval, write your answer as a union of the intervals.
   </row>
 

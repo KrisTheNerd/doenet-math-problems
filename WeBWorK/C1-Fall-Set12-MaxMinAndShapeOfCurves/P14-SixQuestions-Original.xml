@@ -63,7 +63,7 @@
 </p>
 
 <p>
-  1. Find the largest \emph{open} interval(s) on which
+  1. Find the largest <em>open</em> interval(s) on which
   <m>f</m> is increasing. If there is more than one interval,
   write your answer as a union of the intervals.
 </p>
@@ -73,7 +73,7 @@
 </p>
 
 <p>
-  2. Find the largest \emph{open} interval(s) on which
+  2. Find the largest <em>open</em> interval(s) on which
   <m>f</m> is decreasing. If there is more than one interval,
   write your answer as a union of the intervals.
 </p>
@@ -84,7 +84,7 @@
 
 <p>
   3. Find the local maxima of <m>f</m>.
-  \textbf{List your answers as points in the form}
+  <alert>List your answers as points in the form</alert>
   <m>(a,b)</m>.
 </p>
 <p>
@@ -94,7 +94,7 @@
 
 <p>
   4. Find the local minima of <m>f</m>.
-  \textbf{List your answers as points in the form}
+  <alert>List your answers as points in the form</alert>
   <m>(a,b)</m>.
 </p>
 <p>
@@ -103,7 +103,7 @@
 </p>
 
 <p>
-  5. Find the largest \emph{open} interval(s) on
+  5. Find the largest <em>open</em> interval(s) on
   which <m>f</m> is concave upward. If there is
   more than one interval, write your answer as a
   union of the intervals.
@@ -114,7 +114,7 @@
 </p>
 
 <p>
-  6. Find the largest \emph{open} interval(s) on
+  6. Find the largest <em>open</em> interval(s) on
   which <m>f</m> is concave downward. If there is
   more than one interval, write your answer as a
   union of the intervals.

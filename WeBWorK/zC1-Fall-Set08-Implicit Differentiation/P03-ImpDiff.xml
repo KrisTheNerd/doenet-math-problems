@@ -1,0 +1,39 @@
+<!--
+#DESCRIPTION
+##  Calculus: Implicit differentiation
+##ENDDESCRIPTION
+
+## DBsubject(Calculus - single variable)
+## DBchapter(Differentiation)
+## DBsection(Implicit differentiation)
+## Date(11/10/2010)
+## Institution(University of Minnesota)
+## Author(Justin Sukiennik)
+## MLT(xy_powers_trig)
+## MLTleader(1)
+## Level(3)
+## MO(1)
+## TitleText1('Calculus: Concepts and Contexts')
+## AuthorText1('Stewart')
+## EditionText1('4 Custom UMTYMP Ed.')
+## Section1('3.5')
+## Problem1('10')
+## KEYWORDS('calculus', 'derivative', 'implicit differentiation')
+-->
+
+<setup>
+  <selectFromSequence from="2" to="6" step="1" name="a" />
+  <selectFromSequence from="2" to="8" step="1" name="b" />
+  <math name="ans" simplify>($b-cos(x*y^2)*y^2)/(2*x*y*cos(x*y^2))</math>
+</setup>
+
+<p>
+  Find  <m>\frac{dy}{dx}</m> by implicit differentiation.
+  <me>$a + $b x = \sin(x y^2)</me>
+  Answer: <m>\displaystyle \frac{dy}{dx} =</m>
+  <answer><award>$ans</award></answer>
+</p>
+
+<solution>
+  <row>Answer: $ans</row>
+</solution>

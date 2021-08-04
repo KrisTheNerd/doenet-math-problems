@@ -1,10 +1,4 @@
 <!--
-  Where/Who/How should # of attempts be set?
-
-  In WebWork, this one limited to two attempts.
--->
-
-<!--
 #DESCRIPTION
 ##  Calculus: Functions
 ##ENDDESCRIPTION
@@ -24,8 +18,9 @@
 ## Problem1('63')
 ## KEYWORDS('calculus', 'function', 'even', 'odd')
 -->
+
+<variantControl nvariants="4" variantNames="1 2 3 4"/>
 <setup>
-  <variantControl nvariants="4" variantNames="1 2 3 4"/>
   <select assignNames="(f ans1 g ans2)" >
     <option selectForVariantNames="1">
       <math>2 cos(x/2)+4</math>
@@ -56,7 +51,6 @@
 
 The graph below has two functions <m>f</m> (<copy tname="curveF" prop="styleDescription" /> line) and <m>g</m> (<copy tname="curveG" prop="styleDescription" /> line).
 
-<p>Expanded polynomial: $polyExpandSimplify.</p>
 <graph xmax="8" xmin="-8" ymin="-8" ymax="8">
   <curve name="curveF" styleNumber="1">
     <function formula="$f" />
@@ -67,26 +61,24 @@ The graph below has two functions <m>f</m> (<copy tname="curveF" prop="styleDesc
 </graph>
 
 <p>The function <m>f</m> (<copy tname="curveF" prop="styleDescription" /> line) is:
-
-  <answer name="studentAns1">
-  <choiceinput inline>
-    <choice credit="$ans1=Even">Even</choice>
-    <choice credit="$ans1=Odd">Odd</choice>
-    <choice credit="$ans1=Neither">Neither</choice>
+  <choiceinput name="ci1" inline>
+    <choice>Even</choice>
+    <choice>Odd</choice>
+    <choice>Neither</choice>
   </choiceinput>
-  </answer>
 </p>
 
 <p>The function <m>g</m> (<copy tname="curveG" prop="styleDescription" /> line) is:
-
-  <answer name="studentAns2">
-  <choiceinput inline>
-    <choice credit="$ans2=Even">Even</choice>
-    <choice credit="$ans2=Odd">Odd</choice>
-    <choice credit="$ans2=Neither">Neither</choice>
+  <choiceinput name="ci2" inline>
+    <choice>Even</choice>
+    <choice>Odd</choice>
+    <choice>Neither</choice>
   </choiceinput>
-  </answer>
 </p>
+
+<answer maximumNumberOfAttempts="2" name="studentAns1">
+  <award><when>$ci1=$ans1 and $ci2=$ans2</when></award>
+  </answer>
 
 <solution>
   <tabular>

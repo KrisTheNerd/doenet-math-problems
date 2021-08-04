@@ -36,7 +36,7 @@
 </setup>
 
 <p>
-  Evaluate the limit, if it exists.  If a limit \emph{does not exist}, type \textbf{DNE}.
+  Evaluate the limit, if it exists.  If a limit <em>does not exist</em>, type <alert>DNE</alert>.
   <me>
     \lim_{h \to 0} \frac{\sqrt{
     <math simplify>$a^2</math>

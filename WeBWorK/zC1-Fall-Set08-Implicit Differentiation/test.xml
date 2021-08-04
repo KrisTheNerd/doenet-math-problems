@@ -1,0 +1,35 @@
+<module name="">
+  <setup>
+    <customAttribute componentType="" attribute="" defaultValue="" assignNames="" />
+  </setup>
+  <!-- Module Content -->
+</module>
+
+<selectFromSequence from="5" to="5" step="1" name="a" />
+<selectFromSequence from="5" to="19" step="1" name="" />
+
+<module name="">
+  <setup>
+  <customAttribute componentType="" attribute="" defaultValue="" assignNames="" />
+  </setup>
+  <!-- Module Content -->
+</module>
+
+<answer><award></award></answer>
+
+<p>
+  <row>
+    Answer prompt:
+  </row>
+  <row>
+    Answer box:
+    <answer><award>$ans</award></answer>
+  </row>
+</p>
+
+<solution>
+  <row>Answer: </row>
+</solution>
+
+<alert></alert>
+<em></em>

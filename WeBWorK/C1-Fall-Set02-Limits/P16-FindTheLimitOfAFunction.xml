@@ -27,7 +27,7 @@
 </setup>
 
 <p>
-  Evaluate the limit, if it exists.  If a limit \emph{does not exist}, type \textbb{DNE}.
+  Evaluate the limit, if it exists.  If a limit <em>does not exist</em>, type <alert>DNE</alert>.
   <me>
     \lim_{x \to -$a} \frac{2x+$b}{|x+$a|}
   </me>
